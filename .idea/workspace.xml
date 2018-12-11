@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddReportTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddReportTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddReportTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,11 +25,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AddReportTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="321">
+              <caret line="65" column="30" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="65" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3388#3389#0" expanded="true" />
+                <element signature="e#3417#3418#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,6 +78,7 @@
         <option value="$PROJECT_DIR$/src/test/java/untitled2.java" />
         <option value="$PROJECT_DIR$/src/test/java/ApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddReportTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ListScreenTests.java" />
       </list>
     </option>
   </component>
@@ -80,7 +95,9 @@
     <option name="width" value="1087" />
     <option name="height" value="837" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -122,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544548729028" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544549410751" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -137,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddReportTests.addNewReport">
+  <component name="RunManager" selected="JUnit.ListScreenTests.clicButtonAndOpenModal">
     <configuration name="AddReportTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ioappium" />
       <option name="PACKAGE_NAME" value="" />
@@ -176,25 +193,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ioSampleTest.basicTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ListScreenTests.clicButtonAndOpenModal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ioappium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ioSampleTest" />
-      <option name="METHOD_NAME" value="basicTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="ListScreenTests" />
+      <option name="METHOD_NAME" value="clicButtonAndOpenModal" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ListScreenTests.clicButtonAndOpenModal" />
         <item itemvalue="JUnit.AddReportTests.addNewReport" />
         <item itemvalue="JUnit.AddReportTests" />
         <item itemvalue="JUnit.AddReportTests.clicButtonAndOpenModal" />
         <item itemvalue="JUnit.AddReportTests.sampleTest" />
-        <item itemvalue="TestNG.ioSampleTest.basicTest" />
       </list>
     </recent_temporary>
   </component>
@@ -208,17 +223,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544525646909</updated>
-      <workItem from="1544525650551" duration="17593000" />
+      <workItem from="1544525650551" duration="18059000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 17h 59m 38s.xml">
-      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 04m 05s.xml">
-      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 05m 43s.xml">
       <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
@@ -243,19 +252,26 @@
     <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 18m 39s.xml">
       <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ListScreenTests_clicButtonAndOpenModal - 2018.12.11 at 18h 24m 13s.xml">
+      <configuration name="ListScreenTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListScreenTests_clicButtonAndOpenModal - 2018.12.11 at 18h 30m 06s.xml">
+      <configuration name="ListScreenTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17593000" />
+    <option name="totallyTimeSpent" value="18059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="23" width="1087" height="837" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30622008" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30622008" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.32885906" />
@@ -266,7 +282,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32885906" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -327,8 +343,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AddReportTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        <state relative-caret-position="321">
+          <caret line="65" column="30" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="65" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3388#3389#0" expanded="true" />
+            <element signature="e#3417#3418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -87,6 +87,6 @@ public class AddReportTests {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 }
