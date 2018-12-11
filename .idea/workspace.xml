@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="" />
+    <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddReportTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,16 +20,16 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ApplicationTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AddReportTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="704">
+              <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,6 +51,9 @@
       <find>element</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -56,6 +63,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/untitled2.java" />
         <option value="$PROJECT_DIR$/src/test/java/ApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddReportTests.java" />
       </list>
     </option>
   </component>
@@ -69,9 +77,10 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-2" />
     <option name="y" value="23" />
-    <option name="width" value="1149" />
+    <option name="width" value="1087" />
     <option name="height" value="837" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -113,7 +122,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544539378517" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544548729028" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -127,41 +137,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationTests">
-    <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AddReportTests.addNewReport">
+    <configuration name="AddReportTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ioappium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="AddReportTests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.clicButtonAndOpenModal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddReportTests.addNewReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ioappium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="AddReportTests" />
+      <option name="METHOD_NAME" value="addNewReport" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddReportTests.clicButtonAndOpenModal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ioappium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddReportTests" />
       <option name="METHOD_NAME" value="clicButtonAndOpenModal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.sampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddReportTests.sampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ioappium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="AddReportTests" />
       <option name="METHOD_NAME" value="sampleTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Untitled" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ioappium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Untitled" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApplicationTests" />
-        <item itemvalue="JUnit.ApplicationTests.clicButtonAndOpenModal" />
-        <item itemvalue="JUnit.ApplicationTests.sampleTest" />
+        <item itemvalue="JUnit.AddReportTests.addNewReport" />
+        <item itemvalue="JUnit.AddReportTests" />
+        <item itemvalue="JUnit.AddReportTests.clicButtonAndOpenModal" />
+        <item itemvalue="JUnit.AddReportTests.sampleTest" />
         <item itemvalue="TestNG.ioSampleTest.basicTest" />
-        <item itemvalue="TestNG.Untitled" />
       </list>
     </recent_temporary>
   </component>
@@ -198,55 +208,54 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544525646909</updated>
-      <workItem from="1544525650551" duration="10602000" />
+      <workItem from="1544525650551" duration="17593000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTests_sampleTest - 2018.12.11 at 15h 12m 48s.xml">
-      <configuration name="ApplicationTests.sampleTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 17h 59m 38s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_sampleTest - 2018.12.11 at 15h 15m 52s.xml">
-      <configuration name="ApplicationTests.sampleTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 04m 05s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_sampleTest - 2018.12.11 at 15h 16m 36s.xml">
-      <configuration name="ApplicationTests.sampleTest" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 05m 43s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_clicButtonAndOpenModal - 2018.12.11 at 15h 23m 50s.xml">
-      <configuration name="ApplicationTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 07m 45s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_clicButtonAndOpenModal - 2018.12.11 at 15h 31m 33s.xml">
-      <configuration name="ApplicationTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 08m 35s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_clicButtonAndOpenModal - 2018.12.11 at 15h 32m 09s.xml">
-      <configuration name="ApplicationTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 10m 49s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_clicButtonAndOpenModal - 2018.12.11 at 15h 33m 41s.xml">
-      <configuration name="ApplicationTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 12m 53s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_clicButtonAndOpenModal - 2018.12.11 at 15h 35m 28s.xml">
-      <configuration name="ApplicationTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 14m 55s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests_clicButtonAndOpenModal - 2018.12.11 at 15h 36m 04s.xml">
-      <configuration name="ApplicationTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 17m 02s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTests - 2018.12.11 at 15h 37m 18s.xml">
-      <configuration name="ApplicationTests" configurationId="JUnit" />
+    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 18m 39s.xml">
+      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10602000" />
+    <option name="totallyTimeSpent" value="17593000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="23" width="1149" height="837" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2" y="23" width="1087" height="837" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30623305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30622008" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.32885906" />
@@ -257,7 +266,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32885906" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -312,14 +321,14 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddReportTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="704">
+          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
