@@ -27,7 +27,7 @@ There is no need to install or import crazy plugins because I have already impor
 Now open Appium.
 Go to Advanced and configure like the image.
 
-<img src="https://i.imgur.com/mFdUAyK.png =100x20" alt="drawing" width="350" height="300" />
+![appium](https://i.imgur.com/mFdUAyK.png)
 
 Start the Server and leave it opened.
 
