@@ -34,7 +34,7 @@ public class ListScreenTests {
     }
 
     @Test
-    public void clicButtonAndOpenModal() throws InterruptedException {
+    public void checkTitleNameInListEqualToSingleReportScreen() throws InterruptedException {
         TimeUnit.SECONDS.sleep(5); // Wait for app to open
 
         // Clic on + button

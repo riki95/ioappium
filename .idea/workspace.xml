@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddReportTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddReportTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            <state relative-caret-position="133">
+              <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,7 +137,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544549410751" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544549719574" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -223,14 +221,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544525646909</updated>
-      <workItem from="1544525650551" duration="18059000" />
+      <workItem from="1544525650551" duration="18368000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 05m 43s.xml">
-      <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ApplicationTests_addNewReport - 2018.12.11 at 18h 07m 45s.xml">
       <configuration name="ApplicationTests.addNewReport" configurationId="JUnit" />
     </history-entry>
@@ -258,9 +253,12 @@
     <history-entry file="ListScreenTests_clicButtonAndOpenModal - 2018.12.11 at 18h 30m 06s.xml">
       <configuration name="ListScreenTests.clicButtonAndOpenModal" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ListScreenTests_clicButtonAndOpenModal - 2018.12.11 at 18h 33m 34s.xml">
+      <configuration name="ListScreenTests.clicButtonAndOpenModal" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18059000" />
+    <option name="totallyTimeSpent" value="18368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="23" width="1087" height="837" extended-state="0" />
@@ -355,8 +353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        <state relative-caret-position="133">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
