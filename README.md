@@ -1,6 +1,6 @@
 # Zenaclean Mobile System Test
 
-This is the System Test Suite for Zenaclean Mobile App, using Appium - Selenium - TestNG - JUnit.
+This is the System Test Suite for [Zenaclean Mobile App](https://github.com/DavidePonzini/zenaclean-mobile), using Appium - Selenium - TestNG - JUnit.
 
 ## Getting Started
 
