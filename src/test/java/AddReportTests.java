@@ -22,12 +22,12 @@ public class AddReportTests {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("udid", "emulator-5554");
         desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("platformVersion", "8.1");
-        desiredCapabilities.setCapability("deviceName", "NEXUS_5X_API_27");
+        desiredCapabilities.setCapability("platformVersion", "8.0");
+        desiredCapabilities.setCapability("deviceName", "Pixel_2_API_26");
         desiredCapabilities.setCapability("appPackage", "com.zenaclean");
         desiredCapabilities.setCapability("appActivity", ".MainActivity");
-        desiredCapabilities.setCapability("skipUnlock","true");
-        desiredCapabilities.setCapability("noReset","false");
+        desiredCapabilities.setCapability("skipUnlock", "true");
+        desiredCapabilities.setCapability("noReset", "false");
 
         URL remoteUrl = new URL("http://localhost:4723/wd/hub");
 
@@ -44,9 +44,9 @@ public class AddReportTests {
 
         // Wait for modal to open and then identify title
         TimeUnit.SECONDS.sleep(5);
-        String titleText = driver.findElement(By.xpath("//*[@text='Titolo Segnalazione']")).getAttribute("text");
+        String titleText = driver.findElement(By.xpath("//*[@text='Titolo']")).getAttribute("text");
 
-        Assert.assertEquals("Titolo Segnalazione", titleText);
+        Assert.assertEquals("Titolo", titleText);
     }
 
     //Test not working due to bad usage of IDs on React
@@ -61,32 +61,34 @@ public class AddReportTests {
         // Identify title form and input "titolo di prova"
         TimeUnit.SECONDS.sleep(5);
         WebElement titleInput = driver.findElementByAccessibilityId("inputTitle");
-        titleInput.clear();
+        //titleInput.clear();
         titleInput.sendKeys("titolo di prova");
         driver.hideKeyboard();
 
         TimeUnit.SECONDS.sleep(5);
         // Identify description form and input "descrizione di prova"
         WebElement descriptionInput = driver.findElementByAccessibilityId("inputDescr");
-
-        descriptionInput.clear();
-        TimeUnit.SECONDS.sleep(1);
+        //descriptionInput.clear();
+        //TimeUnit.SECONDS.sleep(1);
         descriptionInput.sendKeys("descrizione di prova");
         driver.hideKeyboard();
 
         // Clic on "Invia", wait for popup and check "ok"
         TimeUnit.SECONDS.sleep(5);
         //WebElement buttonSend = driver.findElementByAccessibilityId("buttonSend");
-        WebElement buttonSend = driver.findElement(By.xpath("//*[@text='Invia']"));
+        WebElement buttonSend = driver.findElementByXPath("//*[@text='Invia']");
+        buttonSend.click();
         buttonSend.click();
         TimeUnit.SECONDS.sleep(5);
 
-        WebElement okText = driver.findElement(By.xpath("//*[@text='OK']"));
-        Assert.assertEquals(okText.getAttribute("text"), "OK");
+        WebElement okButton = driver.findElementByXPath("//*[@text='OK']");
+        String okText = okButton.getText();
+        Assert.assertEquals(okText, "OK");
+
     }
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 }
