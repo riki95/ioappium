@@ -21,22 +21,23 @@ public class ListScreenTests {
     public void checkTitleNameInListEqualToSingleReportScreen() throws InterruptedException {
         TimeUnit.SECONDS.sleep(5); // Wait for app to open
 
-        // Clic on + button
+        WebElement textBelow = driver.findElementByAccessibilityId("text-below");
+        textBelow.click();
+
+        WebElement demoButton = driver.findElementByAccessibilityId("demo-button");
+        demoButton.click();
+
         WebElement listButton = driver.findElementByXPath("//*[@text='Lista']");
         listButton.click();
 
-        // Identify title form and input "titolo di prova"
-        TimeUnit.SECONDS.sleep(5);
-        WebElement titleElement = driver.findElementByXPath("//*[@text='Problema stradale']");
-        String titleReport = titleElement.getAttribute("text");
-        titleElement.click();
+        WebElement firstElement = driver.findElementByAccessibilityId("title-report");
+        String titleInList = firstElement.getText();
+        firstElement.click();
 
-        // Identify title form and input "titolo di prova"
-        TimeUnit.SECONDS.sleep(5);
-        WebElement title2Element = driver.findElementByXPath("//*[@text='Problema stradale']");
-        String title2Report = title2Element.getAttribute("text");
+        WebElement singleElement = driver.findElementByAccessibilityId("title-singlereport");
+        String singleElementTitle = singleElement.getText();
 
-        Assert.assertEquals(titleReport, title2Report);
+        Assert.assertEquals(titleInList, singleElementTitle);
     }
 
     @After
