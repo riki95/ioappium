@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.concurrent.TimeUnit;
 
-public class AddReportTests {
+public class AddReportScreenTests {
 
     private AndroidDriver driver;
 
