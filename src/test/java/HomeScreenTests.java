@@ -18,7 +18,7 @@ public class HomeScreenTests {
 
     @Test
     public void demoButtonWorks() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(3); // Wait for app to open
+        TimeUnit.SECONDS.sleep(5); // Wait for app to open
 
         WebElement textBelow = driver.findElementByAccessibilityId("text-below");
         textBelow.click();

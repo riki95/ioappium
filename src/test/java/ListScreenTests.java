@@ -19,7 +19,7 @@ public class ListScreenTests {
 
     @Test
     public void checkTitleNameInListEqualToSingleReportScreen() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+        TimeUnit.SECONDS.sleep(7); // Wait for app to open
 
         WebElement textBelow = driver.findElementByAccessibilityId("text-below");
         textBelow.click();
