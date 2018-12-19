@@ -17,15 +17,15 @@ public class SignUpTests {
         driver = CapabilitiesSetter.DriverCreator();
     }
 
-    public static void doSignUp(AndroidDriver driver) throws InterruptedException {
+    public static void doSignUp(AndroidDriver driver, String ssnText, String emailText) throws InterruptedException {
         driver.findElementByAccessibilityId("signup-button").click();
 
         WebElement ssn = driver.findElementByAccessibilityId("ssn-signup");
-        ssn.sendKeys(Secret.getSsn());
+        ssn.sendKeys(ssnText);
         driver.hideKeyboard();
 
         WebElement email = driver.findElementByAccessibilityId("signup-email");
-        email.sendKeys(Secret.getEmail());
+        email.sendKeys(emailText);
         driver.hideKeyboard();
 
         WebElement password = driver.findElementByAccessibilityId("signup-password");
@@ -43,10 +43,30 @@ public class SignUpTests {
     public void checkSignupWorks() throws InterruptedException {
         TimeUnit.SECONDS.sleep(7); // Wait for app to open
 
-       doSignUp(driver);
+        doSignUp(driver, Secret.getSsn(), Secret.getEmail());
 
         String successText = driver.findElementByXPath("//*[@text='Registrazione effettuata con successo!']").getText();
         Assert.assertEquals(successText, "Registrazione effettuata con successo!");
+    }
+
+    @Test
+    public void checkWrongSn() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(7); // Wait for app to open
+
+        doSignUp(driver, Secret.getSsn(), Secret.getEmail());
+
+        String successText = driver.findElementByXPath("//*[@text='Utente o codice fiscale già registrato']").getText();
+        Assert.assertEquals(successText, "Utente o codice fiscale già registrato");
+    }
+
+    @Test
+    public void checkWrongEmail() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(7); // Wait for app to open
+
+        doSignUp(driver, "abcdtf00a00d000g", Secret.getEmail());
+
+        String successText = driver.findElementByXPath("//*[@text='Utente o codice fiscale già registrato']").getText();
+        Assert.assertEquals(successText, "Utente o codice fiscale già registrato");
     }
 
     @After

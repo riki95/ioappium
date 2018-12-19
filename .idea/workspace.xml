@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Secret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Secret.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -71,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/Secret.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -79,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
+            <state relative-caret-position="12">
+              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,8 +135,8 @@
         <option value="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ListScreenTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SignUpTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Secret.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SignUpTests.java" />
       </list>
     </option>
   </component>
@@ -198,7 +197,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545236405747" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545237089421" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -217,13 +216,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SignUpTests.checkSignupWorks">
-    <configuration name="AddReportScreenTests.addReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in io-appium">
+    <configuration name="All in io-appium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddReportScreenTests" />
-      <option name="METHOD_NAME" value="addReport" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -248,12 +245,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginScreenTests.checkLoginWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginScreenTests" />
-      <option name="METHOD_NAME" value="checkLoginWorks" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -269,19 +264,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LoginScreenTests.checkLoginWorks" />
-      <item itemvalue="JUnit.AddReportScreenTests.addReport" />
       <item itemvalue="JUnit.HomeScreenTests.demoButtonWorks" />
       <item itemvalue="JUnit.ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" />
       <item itemvalue="JUnit.SignUpTests.checkSignupWorks" />
+      <item itemvalue="JUnit.SignUpTests" />
+      <item itemvalue="JUnit.All in io-appium" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in io-appium" />
+        <item itemvalue="JUnit.SignUpTests" />
         <item itemvalue="JUnit.SignUpTests.checkSignupWorks" />
         <item itemvalue="JUnit.ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" />
         <item itemvalue="JUnit.HomeScreenTests.demoButtonWorks" />
-        <item itemvalue="JUnit.AddReportScreenTests.addReport" />
-        <item itemvalue="JUnit.LoginScreenTests.checkLoginWorks" />
       </list>
     </recent_temporary>
   </component>
@@ -304,12 +299,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ListScreenTests_checkTitleNameInListEqualToSingleReportScreen - 2018.12.19 at 16h 56m 23s.xml">
-      <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ListScreenTests_checkTitleNameInListEqualToSingleReportScreen - 2018.12.19 at 16h 59m 06s.xml">
-      <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ListScreenTests_checkTitleNameInListEqualToSingleReportScreen - 2018.12.19 at 16h 59m 33s.xml">
       <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" configurationId="JUnit" />
     </history-entry>
@@ -334,9 +323,15 @@
     <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 19m 33s.xml">
       <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 21m 02s.xml">
+      <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignUpTests - 2018.12.19 at 17h 29m 22s.xml">
+      <configuration name="SignUpTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35660000" />
+    <option name="totallyTimeSpent" value="36255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="291" y="47" width="1002" height="767" extended-state="0" />
@@ -482,14 +477,14 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Secret.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
+        <state relative-caret-position="12">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
