@@ -14,11 +14,10 @@ public class LoginScreenTests {
 
     @Before
     public void setUp() throws MalformedURLException {
-        driver = CapabilitiesSetter.DriverCreator2();
+        driver = CapabilitiesSetter.DriverCreator();
     }
 
-    @Test
-    public void checkLoginWorks() throws InterruptedException {
+    public static void doLogin(AndroidDriver driver) throws InterruptedException {
         TimeUnit.SECONDS.sleep(5); // Wait for app to open
 
         WebElement text_input = driver.findElementByAccessibilityId("login-email");
@@ -33,7 +32,13 @@ public class LoginScreenTests {
         WebElement login_button = driver.findElementByAccessibilityId("login-button");
         login_button.click();
         login_button.click();
+    }
 
+    @Test
+    public void checkLoginWorks() throws InterruptedException {
+        LoginScreenTests.doLogin(driver);
+
+        //Modify this when we implement users logged icon
         WebElement listButton = driver.findElementByXPath("//*[@text='Lista']");
         Assert.assertEquals(listButton.getText(), "Lista");
     }
