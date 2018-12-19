@@ -20,7 +20,7 @@ public class AddReportScreenTests {
 
     @Test
     public void undoReport() throws InterruptedException{
-        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+        TimeUnit.SECONDS.sleep(3); // Wait for app to open
         LoginScreenTests.doLogin(driver);
 
         TimeUnit.SECONDS.sleep(1);
@@ -33,14 +33,14 @@ public class AddReportScreenTests {
 
     @Test
     public void addReport() throws InterruptedException{
-        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+        TimeUnit.SECONDS.sleep(3); // Wait for app to open
         LoginScreenTests.doLogin(driver);
 
         TimeUnit.SECONDS.sleep(1);
         WebElement add_button = driver.findElementByAccessibilityId("button-add");
         add_button.click();
 
-        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+        TimeUnit.SECONDS.sleep(3); // Wait for app to open
         WebElement confirm_button = driver.findElementByAccessibilityId("button-confirm");
         confirm_button.click();
 
