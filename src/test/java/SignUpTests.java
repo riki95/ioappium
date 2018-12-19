@@ -17,34 +17,40 @@ public class SignUpTests {
         driver = CapabilitiesSetter.DriverCreator();
     }
 
-    public static void doLogin(AndroidDriver driver) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+    public static void doSignUp(AndroidDriver driver) throws InterruptedException {
+        driver.findElementByAccessibilityId("signup-button").click();
 
-        WebElement text_input = driver.findElementByAccessibilityId("login-email");
-        text_input.sendKeys(Secret.getEmail());
+        WebElement ssn = driver.findElementByAccessibilityId("ssn-signup");
+        ssn.sendKeys(Secret.getSsn());
         driver.hideKeyboard();
 
-        WebElement password_input = driver.findElementByAccessibilityId("login-password");
-        password_input.sendKeys(Secret.getPassword());
+        WebElement email = driver.findElementByAccessibilityId("signup-email");
+        email.sendKeys(Secret.getEmail());
         driver.hideKeyboard();
 
-        TimeUnit.SECONDS.sleep(2);
-        WebElement login_button = driver.findElementByAccessibilityId("login-button");
-        login_button.click();
-        login_button.click();
+        WebElement password = driver.findElementByAccessibilityId("signup-password");
+        password.sendKeys(Secret.getPassword());
+        driver.hideKeyboard();
+
+        WebElement passwordConfirm = driver.findElementByAccessibilityId("signup-confirmbutton");
+        passwordConfirm.sendKeys(Secret.getPassword());
+        driver.hideKeyboard();
+
+        driver.findElementByAccessibilityId("signup-button").click();
     }
 
     @Test
-    public void checkLoginWorks() throws InterruptedException {
-        LoginScreenTests.doLogin(driver);
+    public void checkSignupWorks() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(7); // Wait for app to open
 
-        //Modify this when we implement users logged icon
-        WebElement listButton = driver.findElementByXPath("//*[@text='Lista']");
-        Assert.assertEquals(listButton.getText(), "Lista");
+       doSignUp(driver);
+
+        String successText = driver.findElementByXPath("//*[@text='Registrazione effettuata con successo!']").getText();
+        Assert.assertEquals(successText, "Registrazione effettuata con successo!");
     }
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 }

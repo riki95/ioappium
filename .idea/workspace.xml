@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SignUpTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SingleReportTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Secret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Secret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,15 +27,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="321">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1405#1406#0" expanded="true" />
                 <element signature="e#1434#1435#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1497#1498#0" expanded="true" />
+                <element signature="e#1526#1527#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MapScreenTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Secret.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/test/java/untitled2.java" />
         <option value="$PROJECT_DIR$/src/test/java/ApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddReportTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Secret.java" />
         <option value="$PROJECT_DIR$/src/test/Components/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" />
         <option value="$PROJECT_DIR$/src/test/java/MapScreenTests.java" />
@@ -92,6 +136,8 @@
         <option value="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ListScreenTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SignUpTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Secret.java" />
       </list>
     </option>
   </component>
@@ -152,7 +198,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545235194201" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545236405747" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -171,22 +217,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ListScreenTests.checkTitleNameInListEqualToSingleReportScreen">
+  <component name="RunManager" selected="JUnit.SignUpTests.checkSignupWorks">
     <configuration name="AddReportScreenTests.addReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddReportScreenTests" />
       <option name="METHOD_NAME" value="addReport" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddReportScreenTests.undoReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="io-appium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddReportScreenTests" />
-      <option name="METHOD_NAME" value="undoReport" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,20 +258,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SignUpTests.checkSignupWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="io-appium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="checkSignupWorks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.LoginScreenTests.checkLoginWorks" />
-      <item itemvalue="JUnit.AddReportScreenTests.undoReport" />
       <item itemvalue="JUnit.AddReportScreenTests.addReport" />
       <item itemvalue="JUnit.HomeScreenTests.demoButtonWorks" />
       <item itemvalue="JUnit.ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" />
+      <item itemvalue="JUnit.SignUpTests.checkSignupWorks" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SignUpTests.checkSignupWorks" />
         <item itemvalue="JUnit.ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" />
         <item itemvalue="JUnit.HomeScreenTests.demoButtonWorks" />
         <item itemvalue="JUnit.AddReportScreenTests.addReport" />
         <item itemvalue="JUnit.LoginScreenTests.checkLoginWorks" />
-        <item itemvalue="JUnit.AddReportScreenTests.undoReport" />
       </list>
     </recent_temporary>
   </component>
@@ -258,39 +304,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddReportScreenTests_addReport - 2018.12.19 at 16h 10m 18s.xml">
-      <configuration name="AddReportScreenTests.addReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddReportScreenTests_addReport - 2018.12.19 at 16h 12m 01s.xml">
-      <configuration name="AddReportScreenTests.addReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginScreenTests_checkLoginWorks - 2018.12.19 at 16h 29m 58s.xml">
-      <configuration name="LoginScreenTests.checkLoginWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginScreenTests_checkLoginWorks - 2018.12.19 at 16h 30m 26s.xml">
-      <configuration name="LoginScreenTests.checkLoginWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddReportScreenTests_addReport - 2018.12.19 at 16h 39m 14s.xml">
-      <configuration name="AddReportScreenTests.addReport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HomeScreenTests_demoButtonWorks - 2018.12.19 at 16h 48m 14s.xml">
-      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HomeScreenTests_demoButtonWorks - 2018.12.19 at 16h 48m 46s.xml">
-      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ListScreenTests_checkTitleNameInListEqualToSingleReportScreen - 2018.12.19 at 16h 55m 24s.xml">
-      <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ListScreenTests_checkTitleNameInListEqualToSingleReportScreen - 2018.12.19 at 16h 55m 53s.xml">
-      <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ListScreenTests_checkTitleNameInListEqualToSingleReportScreen - 2018.12.19 at 16h 56m 23s.xml">
       <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ListScreenTests_checkTitleNameInListEqualToSingleReportScreen - 2018.12.19 at 16h 59m 06s.xml">
+      <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListScreenTests_checkTitleNameInListEqualToSingleReportScreen - 2018.12.19 at 16h 59m 33s.xml">
+      <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 11m 43s.xml">
+      <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 12m 03s.xml">
+      <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 12m 37s.xml">
+      <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 13m 41s.xml">
+      <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 15m 41s.xml">
+      <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 18m 04s.xml">
+      <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignUpTests_checkSignupWorks - 2018.12.19 at 17h 19m 33s.xml">
+      <configuration name="SignUpTests.checkSignupWorks" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34415000" />
+    <option name="totallyTimeSpent" value="35660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="291" y="47" width="1002" height="767" extended-state="0" />
@@ -353,13 +399,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/Components/Login.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Secret.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -374,35 +413,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MapScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -437,12 +447,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="321">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1405#1406#0" expanded="true" />
             <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MapScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Secret.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
