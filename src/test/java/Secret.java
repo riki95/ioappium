@@ -1,5 +1,5 @@
 public class Secret {
-    private static String email = "a@test.com";
+    private static String email = "a@a.com";
     private static String password = "00000000";
     private static String ssn = "abcdef00a00d000g";
 
