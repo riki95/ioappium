@@ -23,12 +23,53 @@ public class AddReportScreenTests {
         TimeUnit.SECONDS.sleep(5); // Wait for app to open
         LoginScreenTests.doLogin(driver);
 
-        TimeUnit.SECONDS.sleep(1); // Wait for app to open
+        TimeUnit.SECONDS.sleep(1);
         WebElement add_button = driver.findElementByAccessibilityId("button-add");
         add_button.click();
 
         add_button.click();
-        Assert.assertEquals(add_button.getText(), "+");
+        TimeUnit.SECONDS.sleep(1);
+    }
+
+    @Test
+    public void addReport() throws InterruptedException{
+        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+        LoginScreenTests.doLogin(driver);
+
+        TimeUnit.SECONDS.sleep(1);
+        WebElement add_button = driver.findElementByAccessibilityId("button-add");
+        add_button.click();
+
+        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+        WebElement confirm_button = driver.findElementByAccessibilityId("button-confirm");
+        confirm_button.click();
+
+        TimeUnit.SECONDS.sleep(2); // Wait for app to open
+        fillAddReport("titolo","descrizione");
+
+        WebElement buttonSend = driver.findElementByAccessibilityId("button-send");
+        buttonSend.click();
+        buttonSend.click();
+
+        driver.findElement(By.xpath("//*[@text='OK']")).click();
+
+        String successText = driver.findElement(By.xpath("//*[@text='Segnalazione effettuata con successo!']")).getText();
+        driver.findElement(By.xpath("//*[@text='OK']")).click();
+
+        TimeUnit.SECONDS.sleep(2); // Wait for app to open
+
+        Assert.assertEquals(successText, "Segnalazione effettuata con successo!");
+    }
+
+    private void fillAddReport(String title, String description) {
+        WebElement inputTitle = driver.findElementByAccessibilityId("inputTitle");
+        inputTitle.sendKeys(title);
+        driver.hideKeyboard();
+
+        WebElement inputDescr = driver.findElementByAccessibilityId("inputDescr");
+        inputDescr.sendKeys(description);
+        driver.hideKeyboard();
+
     }
 
     @After
