@@ -63,6 +63,16 @@ public class HomePage {
         catch (Exception e) { return null; }
     }
 
+    public WebElement getSignUpButton() {
+        try {
+            new WebDriverWait(driver, 10)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("signup-button")));
+            return driver.findElementByAccessibilityId("signup-button");
+
+        }
+        catch (Exception e) { return null; }
+    }
+
     public void doLogin() {
         getLoginEmailInput().sendKeys(Secret.getEmail());
         driver.hideKeyboard();

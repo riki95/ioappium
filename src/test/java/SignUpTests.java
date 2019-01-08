@@ -1,10 +1,11 @@
+import Objects.HomePage;
 import Objects.Secret;
+import Objects.SignUpPage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
 
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
@@ -18,56 +19,51 @@ public class SignUpTests {
         driver = CapabilitiesSetter.DriverCreator();
     }
 
-    public static void doSignUp(AndroidDriver driver, String ssnText, String emailText) throws InterruptedException {
-        driver.findElementByAccessibilityId("signup-button").click();
+    public static void doSignUp(AndroidDriver driver, SignUpPage signUpPage, String ssnText, String emailText) {
 
-        WebElement ssn = driver.findElementByAccessibilityId("ssn-signup");
-        ssn.sendKeys(ssnText);
+        signUpPage.getSsnInput().sendKeys(ssnText);
         driver.hideKeyboard();
 
-        WebElement email = driver.findElementByAccessibilityId("signup-email");
-        email.sendKeys(emailText);
+        signUpPage.getEmailInput().sendKeys(emailText);
         driver.hideKeyboard();
 
-        WebElement password = driver.findElementByAccessibilityId("signup-password");
-        password.sendKeys(Secret.getPassword());
+        signUpPage.getPasswordInput().sendKeys(Secret.getPassword());
         driver.hideKeyboard();
 
-        WebElement passwordConfirm = driver.findElementByAccessibilityId("signup-confirmbutton");
-        passwordConfirm.sendKeys(Secret.getPassword());
+        signUpPage.getConfirmButton().sendKeys(Secret.getPassword());
         driver.hideKeyboard();
 
-        driver.findElementByAccessibilityId("signup-button").click();
+        signUpPage.getSignUpButton().click();
     }
 
     @Test
-    public void checkSignupWorks() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(7); // Wait for app to open
+    public void checkSignupWorks() {
+        new HomePage(driver).getSignUpButton().click();
+        SignUpPage signUpPage = new SignUpPage(driver);
 
-        doSignUp(driver, Secret.getSsn(), Secret.getEmail());
+        doSignUp(driver, signUpPage, Secret.getSsn(), Secret.getEmail());
 
-        String successText = driver.findElementByXPath("//*[@text='Registrazione effettuata con successo!']").getText();
-        Assert.assertEquals(successText, "Registrazione effettuata con successo!");
+        Assert.assertEquals(signUpPage.getSuccessText().getText(), "Registrazione effettuata con successo!");
     }
 
     @Test
-    public void checkWrongSn() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(7); // Wait for app to open
+    public void checkWrongSn() {
+        new HomePage(driver).getSignUpButton().click();
+        SignUpPage signUpPage = new SignUpPage(driver);
 
-        doSignUp(driver, Secret.getSsn(), Secret.getEmail());
+        doSignUp(driver, signUpPage, Secret.getSsn(), Secret.getEmail());
 
-        String successText = driver.findElementByXPath("//*[@text='Utente o codice fiscale già registrato']").getText();
-        Assert.assertEquals(successText, "Utente o codice fiscale già registrato");
+        Assert.assertEquals(signUpPage.getAlreadyRegisteredText().getText(), "Utente o codice fiscale già registrato");
     }
 
     @Test
-    public void checkWrongEmail() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(7); // Wait for app to open
+    public void checkWrongEmail() {
+        new HomePage(driver).getSignUpButton().click();
+        SignUpPage signUpPage = new SignUpPage(driver);
 
-        doSignUp(driver, "abcdtf00a00d000g", Secret.getEmail());
+        doSignUp(driver, signUpPage, "abcdtf00a00d000g", Secret.getEmail());
 
-        String successText = driver.findElementByXPath("//*[@text='Utente o codice fiscale già registrato']").getText();
-        Assert.assertEquals(successText, "Utente o codice fiscale già registrato");
+        Assert.assertEquals(signUpPage.getAlreadyRegisteredText().getText(), "Utente o codice fiscale già registrato");
     }
 
     @After
