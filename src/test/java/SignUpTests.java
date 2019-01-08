@@ -6,9 +6,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.net.MalformedURLException;
-import java.util.concurrent.TimeUnit;
 
 public class SignUpTests {
 
