@@ -1,13 +1,12 @@
+import Objects.AccountPage;
+import Objects.AppPage;
 import Objects.HomePage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
-
 import java.net.MalformedURLException;
-import java.util.concurrent.TimeUnit;
 
 public class LogoutTests {
 
@@ -19,18 +18,17 @@ public class LogoutTests {
     }
 
     @Test
-    public void checkLogoutWorks() throws InterruptedException {
+    public void checkLogoutWorks() {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin();
 
-        driver.findElementByXPath("//*[@text='Account']").click();
-        driver.findElementByAccessibilityId("logout-button").click();
+        new AppPage(driver).getAccountButton().click();
+
+        AccountPage accountPage = new AccountPage(driver);
+        accountPage.getLogoutButton().click();
         driver.findElementByXPath("//*[@text='OK']").click();
 
-        //Once logged out, check that I'm in Homepage
-        TimeUnit.SECONDS.sleep(3); // Wait for app to open
-        WebElement textBelow = driver.findElementByAccessibilityId("text-below");
-        Assert.assertEquals("SCORRI PER PIÙ INFORMAZIONI ", textBelow.getText());
+        Assert.assertEquals("SCORRI PER PIÙ INFORMAZIONI ", homepage.getTextBelow().getText());
     }
 
     @After

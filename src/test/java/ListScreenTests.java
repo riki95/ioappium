@@ -2,7 +2,6 @@ import Objects.AppPage;
 import Objects.HomePage;
 import Objects.ListPage;
 import Objects.SingleReportPage;
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;
@@ -21,7 +20,7 @@ public class ListScreenTests {
     }
 
     @Test
-    public void checkTitleNameInListEqualToSingleReportScreen() throws InterruptedException {
+    public void checkTitleNameInListEqualToSingleReportScreen() {
         HomePage homePage = new HomePage(driver);
         homePage.getTextBelow().click();
         homePage.getDemoButton().click();

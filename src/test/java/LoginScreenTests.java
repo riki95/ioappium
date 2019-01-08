@@ -5,7 +5,6 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
 import java.net.MalformedURLException;
 
 public class LoginScreenTests {
@@ -22,7 +21,6 @@ public class LoginScreenTests {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin();
 
-        //Modify this when we implement users logged icon
         AppPage appPage = new AppPage(driver);
         Assert.assertEquals(appPage.getListButton().getText(), "Lista");
     }

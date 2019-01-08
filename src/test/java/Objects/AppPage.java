@@ -13,11 +13,29 @@ public class AppPage {
         this.driver = driver;
     }
 
+    public WebElement getMapButton() {
+        try {
+            new WebDriverWait(driver, 5)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='Mappa']")));
+            return driver.findElementByXPath("//*[@text='Mappa']");
+        }
+        catch (Exception e) { return null; }
+    }
+
     public WebElement getListButton() {
         try {
             new WebDriverWait(driver, 5)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='Lista']")));
             return driver.findElementByXPath("//*[@text='Lista']");
+        }
+        catch (Exception e) { return null; }
+    }
+
+    public WebElement getAccountButton() {
+        try {
+            new WebDriverWait(driver, 5)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='Account']")));
+            return driver.findElementByXPath("//*[@text='Account']");
         }
         catch (Exception e) { return null; }
     }
