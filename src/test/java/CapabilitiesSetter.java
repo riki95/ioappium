@@ -9,8 +9,8 @@ public class CapabilitiesSetter {
     public static AndroidDriver<MobileElement> DriverCreator () throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 
-        setDeviceCapabilitiesEmulator(desiredCapabilities);
-        //setDeviceCapabilities(desiredCapabilities);
+        //setDeviceCapabilitiesEmulator(desiredCapabilities);
+        setDeviceCapabilities(desiredCapabilities);
 
         desiredCapabilities.setCapability("appPackage", "com.zenaclean");
         desiredCapabilities.setCapability("appActivity", ".MainActivity");
@@ -23,10 +23,10 @@ public class CapabilitiesSetter {
     }
 
     private static void setDeviceCapabilities(DesiredCapabilities desiredCapabilities) {
-        desiredCapabilities.setCapability("udid", "988678454846324951");
+        desiredCapabilities.setCapability("udid", "MWS0216808006909");
         desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("platformVersion", "8.0");
-        desiredCapabilities.setCapability("deviceName", "Samsung_Galaxy_S7");
+        desiredCapabilities.setCapability("platformVersion", "7.0");
+        desiredCapabilities.setCapability("deviceName", "EVA-L09");
     }
 
     private static void setDeviceCapabilitiesEmulator(DesiredCapabilities desiredCapabilities) {
