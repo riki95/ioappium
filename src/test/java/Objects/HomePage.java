@@ -35,7 +35,7 @@ public class HomePage {
 
     public WebElement getLoginEmailInput() {
         try {
-            new WebDriverWait(driver, 5)
+            new WebDriverWait(driver, 10)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("login-email")));
             return driver.findElementByAccessibilityId("login-email");
 

@@ -1,3 +1,4 @@
+import Objects.AddReportPage;
 import Objects.HomePage;
 import Objects.MapPage;
 import io.appium.java_client.android.AndroidDriver;
@@ -9,7 +10,6 @@ import java.net.MalformedURLException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import java.util.concurrent.TimeUnit;
 
 public class AddReportScreenTests {
 
@@ -21,20 +21,19 @@ public class AddReportScreenTests {
     }
 
     @Test
-    public void undoReport() throws InterruptedException{
+    public void undoReport() {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin();
 
-        WebElement add_button = driver.findElementByAccessibilityId("button-add");
-        add_button.click();
-
-        add_button.click();
-        TimeUnit.SECONDS.sleep(1);
+        MapPage mapPage = new MapPage(driver);
+        WebElement addReportButton = mapPage.getAddReportButton();
+        // clic one time to add and one time to undo cause + button is replaced by undo one
+        addReportButton.click();
+        addReportButton.click();
     }
 
     @Test
-    public void addReport() throws InterruptedException{
-        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+    public void addReport() {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin();
 
@@ -42,35 +41,26 @@ public class AddReportScreenTests {
         mapPage.getAddReportButton().click();
         mapPage.getConfirmReportButton().click();
 
-        fillAddReport("titolo","descrizione");
+        AddReportPage addReportPage = new AddReportPage(driver);
+        addReportPage.getInputTitle().sendKeys("titolo");
+        driver.hideKeyboard();
 
-        WebElement buttonSend = driver.findElementByAccessibilityId("button-send");
+        addReportPage.getInputDescr().sendKeys("descrizione");
+        driver.hideKeyboard();
+
+        WebElement buttonSend = addReportPage.getButtonSend();
         buttonSend.click();
         buttonSend.click();
 
-        driver.findElement(By.xpath("//*[@text='OK']")).click();
-
+        addReportPage.getConfirmReportButton().click();
         String successText = driver.findElement(By.xpath("//*[@text='Segnalazione effettuata con successo!']")).getText();
-        driver.findElement(By.xpath("//*[@text='OK']")).click();
-
-        TimeUnit.SECONDS.sleep(2); // Wait for app to open
+        addReportPage.getConfirmReportButton().click();
 
         Assert.assertEquals(successText, "Segnalazione effettuata con successo!");
     }
 
-    private void fillAddReport(String title, String description) {
-        WebElement inputTitle = driver.findElementByAccessibilityId("inputTitle");
-        inputTitle.sendKeys(title);
-        driver.hideKeyboard();
-
-        WebElement inputDescr = driver.findElementByAccessibilityId("inputDescr");
-        inputDescr.sendKeys(description);
-        driver.hideKeyboard();
-
-    }
-
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 }
