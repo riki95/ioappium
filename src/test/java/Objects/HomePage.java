@@ -1,13 +1,10 @@
 package Objects;
 
 import io.appium.java_client.MobileBy;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
 
 public class HomePage {
     private AndroidDriver driver;
@@ -18,7 +15,7 @@ public class HomePage {
 
     public WebElement getTextBelow() {
         try {
-            new WebDriverWait(driver, 5)
+            new WebDriverWait(driver, 10)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("text-below")));
             return driver.findElementByAccessibilityId("text-below");
 

@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 import Objects.HomePage;
 import java.net.MalformedURLException;
-import java.util.concurrent.TimeUnit;
 
 public class HomeScreenTests {
 

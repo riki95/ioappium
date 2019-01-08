@@ -22,11 +22,9 @@ public class AddReportScreenTests {
 
     @Test
     public void undoReport() throws InterruptedException{
-        TimeUnit.SECONDS.sleep(3); // Wait for app to open
         HomePage homepage = new HomePage(driver);
         homepage.doLogin();
 
-        TimeUnit.SECONDS.sleep(1);
         WebElement add_button = driver.findElementByAccessibilityId("button-add");
         add_button.click();
 

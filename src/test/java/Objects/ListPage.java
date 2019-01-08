@@ -6,19 +6,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AppPage {
+public class ListPage {
     private AndroidDriver driver;
 
-    public AppPage(AndroidDriver driver) {
+    public ListPage(AndroidDriver driver) {
         this.driver = driver;
     }
 
-    public WebElement getListButton() {
+    public WebElement getFirstListElement() {
         try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='Lista']")));
-            return driver.findElementByXPath("//*[@text='Lista']");
+            new WebDriverWait(driver, 7)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("title-report")));
+            return driver.findElementByAccessibilityId("title-report");
+
         }
         catch (Exception e) { return null; }
     }
+
 }

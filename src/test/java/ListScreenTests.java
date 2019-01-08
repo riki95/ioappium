@@ -1,9 +1,16 @@
+import Objects.AppPage;
+import Objects.HomePage;
+import Objects.ListPage;
+import Objects.SingleReportPage;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
@@ -19,25 +26,21 @@ public class ListScreenTests {
 
     @Test
     public void checkTitleNameInListEqualToSingleReportScreen() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(7); // Wait for app to open
+        HomePage homePage = new HomePage(driver);
+        homePage.getTextBelow().click();
+        homePage.getDemoButton().click();
 
-        WebElement textBelow = driver.findElementByAccessibilityId("text-below");
-        textBelow.click();
+        AppPage appPage = new AppPage(driver);
+        appPage.getListButton().click();
 
-        WebElement demoButton = driver.findElementByAccessibilityId("demo-button");
-        demoButton.click();
-
-        WebElement listButton = driver.findElementByXPath("//*[@text='Lista']");
-        listButton.click();
-
-        WebElement firstElement = driver.findElementByAccessibilityId("title-report");
+        ListPage listPage = new ListPage(driver);
+        WebElement firstElement = listPage.getFirstListElement();
         String titleInList = firstElement.getText();
         firstElement.click();
 
-        WebElement singleElement = driver.findElementByAccessibilityId("title-singlereport");
-        String singleElementTitle = singleElement.getText();
+        SingleReportPage singleReportPage = new SingleReportPage(driver);
 
-        Assert.assertEquals(titleInList, singleElementTitle);
+        Assert.assertEquals(titleInList, singleReportPage.getReportTitle().getText());
     }
 
     @After
