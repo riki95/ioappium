@@ -1,3 +1,4 @@
+import Objects.Secret;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;

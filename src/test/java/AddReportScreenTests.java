@@ -1,3 +1,5 @@
+import Objects.HomePage;
+import Objects.MapPage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;
@@ -21,7 +23,8 @@ public class AddReportScreenTests {
     @Test
     public void undoReport() throws InterruptedException{
         TimeUnit.SECONDS.sleep(3); // Wait for app to open
-        LoginScreenTests.doLogin(driver);
+        HomePage homepage = new HomePage(driver);
+        homepage.doLogin();
 
         TimeUnit.SECONDS.sleep(1);
         WebElement add_button = driver.findElementByAccessibilityId("button-add");
@@ -33,18 +36,14 @@ public class AddReportScreenTests {
 
     @Test
     public void addReport() throws InterruptedException{
-        TimeUnit.SECONDS.sleep(3); // Wait for app to open
-        LoginScreenTests.doLogin(driver);
+        TimeUnit.SECONDS.sleep(5); // Wait for app to open
+        HomePage homepage = new HomePage(driver);
+        homepage.doLogin();
 
-        TimeUnit.SECONDS.sleep(1);
-        WebElement add_button = driver.findElementByAccessibilityId("button-add");
-        add_button.click();
+        MapPage mapPage = new MapPage(driver);
+        mapPage.getAddReportButton().click();
+        mapPage.getConfirmReportButton().click();
 
-        TimeUnit.SECONDS.sleep(3); // Wait for app to open
-        WebElement confirm_button = driver.findElementByAccessibilityId("button-confirm");
-        confirm_button.click();
-
-        TimeUnit.SECONDS.sleep(2); // Wait for app to open
         fillAddReport("titolo","descrizione");
 
         WebElement buttonSend = driver.findElementByAccessibilityId("button-send");

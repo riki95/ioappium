@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.net.MalformedURLException;
 
-public class MapScreenTests {
+public class MapPageScreenTests {
 
     private AndroidDriver driver;
 

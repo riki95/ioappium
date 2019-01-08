@@ -1,3 +1,4 @@
+import Objects.HomePage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;
@@ -19,7 +20,8 @@ public class LogoutTests {
 
     @Test
     public void checkLogoutWorks() throws InterruptedException {
-        LoginScreenTests.doLogin(driver);
+        HomePage homepage = new HomePage(driver);
+        homepage.doLogin();
 
         driver.findElementByXPath("//*[@text='Account']").click();
         driver.findElementByAccessibilityId("logout-button").click();

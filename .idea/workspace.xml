@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/LogoutTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Objects/AppPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Objects/ReportPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Objects/Secret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Secret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Secret.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CapabilitiesSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CapabilitiesSetter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Secret.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Secret.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LogoutTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MapScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MapPageScreenTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AddReportScreenTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AddReportScreenTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HomeScreenTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomeScreenTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginScreenTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginScreenTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LogoutTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LogoutTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MapScreenTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Secret.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignUpTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SignUpTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,51 +34,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/LogoutTests.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AppPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+            <state relative-caret-position="90">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
-                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MapScreenTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="22" column="41" selection-start-line="22" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
-                <element signature="e#1526#1527#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SingleReportTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" selection-start-column="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -71,12 +51,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HomeScreenTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+            <state relative-caret-position="140">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="21" column="26" selection-start-line="21" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1273#1274#0" expanded="true" />
+                <element signature="e#1398#1399#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,14 +116,19 @@
         <option value="$PROJECT_DIR$/src/test/java/AddReportTests.java" />
         <option value="$PROJECT_DIR$/src/test/Components/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/MapScreenTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/SignUpTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ListScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" />
         <option value="$PROJECT_DIR$/src/test/java/Secret.java" />
+        <option value="$PROJECT_DIR$/src/test/Objects/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ListScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/LogoutTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/AppPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/Map.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" />
       </list>
     </option>
   </component>
@@ -130,8 +140,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="41" />
+    <option name="x" value="30" />
+    <option name="y" value="45" />
     <option name="width" value="1002" />
     <option name="height" value="767" />
   </component>
@@ -170,6 +180,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zenaclean-mobile-systemtest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zenaclean-mobile-systemtest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Objects" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -179,12 +197,17 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545254060081" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546957550828" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,27 +221,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LogoutTests.checkLogoutWorks">
-    <configuration name="All in io-appium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HomeScreenTests.demoButtonWorks">
+    <configuration name="AddReportScreenTests.addReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="AddReportScreenTests" />
+      <option name="METHOD_NAME" value="addReport" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeScreenTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeScreenTests.demoButtonWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomeScreenTests" />
+      <option name="METHOD_NAME" value="demoButtonWorks" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListScreenTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ListScreenTests" />
+      <option name="METHOD_NAME" value="checkTitleNameInListEqualToSingleReportScreen" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginScreenTests.checkLoginWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="io-appium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginScreenTests" />
+      <option name="METHOD_NAME" value="checkLoginWorks" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,28 +272,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="io-appium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.SignUpTests" />
-      <item itemvalue="JUnit.All in io-appium" />
-      <item itemvalue="JUnit.HomeScreenTests" />
-      <item itemvalue="JUnit.ListScreenTests" />
       <item itemvalue="JUnit.LogoutTests.checkLogoutWorks" />
+      <item itemvalue="JUnit.HomeScreenTests.demoButtonWorks" />
+      <item itemvalue="JUnit.ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" />
+      <item itemvalue="JUnit.LoginScreenTests.checkLoginWorks" />
+      <item itemvalue="JUnit.AddReportScreenTests.addReport" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomeScreenTests.demoButtonWorks" />
+        <item itemvalue="JUnit.AddReportScreenTests.addReport" />
+        <item itemvalue="JUnit.LoginScreenTests.checkLoginWorks" />
+        <item itemvalue="JUnit.ListScreenTests.checkTitleNameInListEqualToSingleReportScreen" />
         <item itemvalue="JUnit.LogoutTests.checkLogoutWorks" />
-        <item itemvalue="JUnit.ListScreenTests" />
-        <item itemvalue="JUnit.All in io-appium" />
-        <item itemvalue="JUnit.HomeScreenTests" />
-        <item itemvalue="JUnit.SignUpTests" />
       </list>
     </recent_temporary>
   </component>
@@ -274,48 +305,50 @@
       <workItem from="1544614922489" duration="4525000" />
       <workItem from="1544627012772" duration="1193000" />
       <workItem from="1545252979438" duration="1043000" />
+      <workItem from="1546947330594" duration="5011000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_io-appium - 2018.12.19 at 17h 40m 59s.xml">
-      <configuration name="All in io-appium" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 01m 03s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomeScreenTests - 2018.12.19 at 17h 41m 25s.xml">
-      <configuration name="HomeScreenTests" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 07m 10s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_io-appium - 2018.12.19 at 17h 41m 44s.xml">
-      <configuration name="All in io-appium" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 07m 41s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_io-appium - 2018.12.19 at 17h 44m 59s.xml">
-      <configuration name="All in io-appium" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 13m 42s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ListScreenTests - 2018.12.19 at 17h 45m 35s.xml">
-      <configuration name="ListScreenTests" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 14m 53s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LogoutTests_checkLogoutWorks - 2018.12.19 at 22h 05m 34s.xml">
-      <configuration name="LogoutTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 16m 16s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LogoutTests_checkLogoutWorks - 2018.12.19 at 22h 06m 39s.xml">
-      <configuration name="LogoutTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 19m 56s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LogoutTests_checkLogoutWorks - 2018.12.19 at 22h 09m 38s.xml">
-      <configuration name="LogoutTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 20m 32s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LogoutTests_checkLogoutWorks - 2018.12.19 at 22h 12m 08s.xml">
-      <configuration name="LogoutTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 21m 42s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LogoutTests_checkLogoutWorks - 2018.12.19 at 22h 14m 10s.xml">
-      <configuration name="LogoutTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.08 at 15h 22m 12s.xml">
+      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38393000" />
+    <option name="totallyTimeSpent" value="43404000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="41" width="1002" height="767" extended-state="0" />
+    <frame x="30" y="45" width="1002" height="767" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26145834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26666668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -324,8 +357,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3674074" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3288889" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3674074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,7 +367,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32740742" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32923833" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32885906" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32740742" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3288889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -377,67 +410,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SingleReportTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Secret.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddReportScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="22" column="41" selection-start-line="22" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HomeScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -452,9 +430,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MapScreenTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SingleReportTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MapPageScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -462,14 +447,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Objects/prova.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/Secret.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LogoutTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+        <state relative-caret-position="345">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/ReportPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddReportScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AppPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="21" column="26" selection-start-line="21" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HomeScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -514,7 +593,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>10</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -531,6 +610,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
