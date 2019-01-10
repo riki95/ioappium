@@ -8,8 +8,6 @@ The idea is to create an application using Agile methodologies. Zenaclean allows
 * [ZenaClean Desktop](https://github.com/DavidePonzini/zenaclean-desktop)
 * [Zenaclean Server](https://github.com/DavidePonzini/zenaclean-server)
 
-Contributors: @[Riccardo Basso](https://github.com/riki95)
-
 # Zenaclean Mobile System Test
 
 This is the System Test Suite for [Zenaclean Mobile App](https://github.com/DavidePonzini/zenaclean-mobile), using Appium - Selenium - TestNG - JUnit.
