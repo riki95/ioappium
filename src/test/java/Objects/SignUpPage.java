@@ -82,4 +82,14 @@ public class SignUpPage {
         }
         catch (Exception e) { return null; }
     }
+
+    public WebElement getCheckbox() {
+        try {
+            new WebDriverWait(driver, 7)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("gdpr-checkbox")));
+            return driver.findElementByAccessibilityId("gdpr-checkbox");
+
+        }
+        catch (Exception e) { return null; }
+    }
 }

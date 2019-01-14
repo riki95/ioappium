@@ -31,6 +31,8 @@ public class SignUpTests {
         signUpPage.getConfirmButton().sendKeys(password);
         driver.hideKeyboard();
 
+        signUpPage.getCheckbox().click();
+
         signUpPage.getSignUpButton().click();
     }
 
