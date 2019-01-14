@@ -5,11 +5,14 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 import java.net.MalformedURLException;
 
 public class LoginScreenTests {
 
     private AndroidDriver driver;
+    String username = "test@test.test";
+    String password = "testtest";
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -17,9 +20,9 @@ public class LoginScreenTests {
     }
 
     @Test
-    public void checkLoginWorks() throws InterruptedException {
+    public void checkLoginWorks() {
         HomePage homepage = new HomePage(driver);
-        homepage.doLogin();
+        homepage.doLogin(username, password);
 
         AppPage appPage = new AppPage(driver);
         Assert.assertEquals(appPage.getListButton().getText(), "Lista");

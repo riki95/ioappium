@@ -11,6 +11,8 @@ import java.net.MalformedURLException;
 public class LogoutTests {
 
     private AndroidDriver driver;
+    String username = "test@test.test";
+    String password = "testtest";
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -20,7 +22,7 @@ public class LogoutTests {
     @Test
     public void checkLogoutWorks() {
         HomePage homepage = new HomePage(driver);
-        homepage.doLogin();
+        homepage.doLogin(username, password);
 
         new AppPage(driver).getAccountButton().click();
 

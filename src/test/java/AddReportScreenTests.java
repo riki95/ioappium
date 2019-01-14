@@ -14,6 +14,8 @@ import org.openqa.selenium.WebElement;
 public class AddReportScreenTests {
 
     private AndroidDriver driver;
+    String username = "test@test.test";
+    String password = "testtest";
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -23,7 +25,7 @@ public class AddReportScreenTests {
     @Test
     public void undoReport() {
         HomePage homepage = new HomePage(driver);
-        homepage.doLogin();
+        homepage.doLogin(username, password);
 
         MapPage mapPage = new MapPage(driver);
         WebElement addReportButton = mapPage.getAddReportButton();
@@ -35,7 +37,7 @@ public class AddReportScreenTests {
     @Test
     public void addReport() {
         HomePage homepage = new HomePage(driver);
-        homepage.doLogin();
+        homepage.doLogin(username, password);
 
         MapPage mapPage = new MapPage(driver);
         mapPage.getAddReportButton().click();

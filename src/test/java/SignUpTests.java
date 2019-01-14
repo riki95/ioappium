@@ -1,5 +1,5 @@
 import Objects.HomePage;
-import Objects.Secret;
+import Objects.User;
 import Objects.SignUpPage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
@@ -11,24 +11,24 @@ import java.net.MalformedURLException;
 public class SignUpTests {
 
     private AndroidDriver driver;
+    String ssn = "PPPPPP00P00P000P";
 
     @Before
     public void setUp() throws MalformedURLException {
         driver = CapabilitiesSetter.DriverCreator();
     }
 
-    public static void doSignUp(AndroidDriver driver, SignUpPage signUpPage, String ssnText, String emailText) {
-
-        signUpPage.getSsnInput().sendKeys(ssnText);
+    public static void doSignUp(AndroidDriver driver, SignUpPage signUpPage, String ssn, String email, String password) {
+        signUpPage.getSsnInput().sendKeys(ssn);
         driver.hideKeyboard();
 
-        signUpPage.getEmailInput().sendKeys(emailText);
+        signUpPage.getEmailInput().sendKeys(email);
         driver.hideKeyboard();
 
-        signUpPage.getPasswordInput().sendKeys(Secret.getPassword());
+        signUpPage.getPasswordInput().sendKeys(password);
         driver.hideKeyboard();
 
-        signUpPage.getConfirmButton().sendKeys(Secret.getPassword());
+        signUpPage.getConfirmButton().sendKeys(password);
         driver.hideKeyboard();
 
         signUpPage.getSignUpButton().click();
@@ -39,7 +39,8 @@ public class SignUpTests {
         new HomePage(driver).getSignUpButton().click();
         SignUpPage signUpPage = new SignUpPage(driver);
 
-        doSignUp(driver, signUpPage, Secret.getSsn(), Secret.getEmail());
+        User user = new User();
+        doSignUp(driver, signUpPage, user.getSsn(), user.getEmail(), user.getPassword());
 
         Assert.assertEquals(signUpPage.getSuccessText().getText(), "Registrazione effettuata con successo!");
     }
@@ -49,7 +50,8 @@ public class SignUpTests {
         new HomePage(driver).getSignUpButton().click();
         SignUpPage signUpPage = new SignUpPage(driver);
 
-        doSignUp(driver, signUpPage, Secret.getSsn(), Secret.getEmail());
+        User user = new User();
+        doSignUp(driver, signUpPage, ssn, user.getEmail(), user.getPassword());
 
         Assert.assertEquals(signUpPage.getAlreadyRegisteredText().getText(), "Utente o codice fiscale già registrato");
     }
@@ -59,13 +61,14 @@ public class SignUpTests {
         new HomePage(driver).getSignUpButton().click();
         SignUpPage signUpPage = new SignUpPage(driver);
 
-        doSignUp(driver, signUpPage, "abcdtf00a00d000g", Secret.getEmail());
+        User user = new User();
+        doSignUp(driver, signUpPage, user.getSsn(), "test@test.test", user.getPassword());
 
         Assert.assertEquals(signUpPage.getAlreadyRegisteredText().getText(), "Utente o codice fiscale già registrato");
     }
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 }

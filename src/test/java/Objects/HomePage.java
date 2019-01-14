@@ -73,11 +73,11 @@ public class HomePage {
         catch (Exception e) { return null; }
     }
 
-    public void doLogin() {
-        getLoginEmailInput().sendKeys(Secret.getEmail());
+    public void doLogin(String username, String password) {
+        getLoginEmailInput().sendKeys(username);
         driver.hideKeyboard();
 
-        getLoginPasswordInput().sendKeys(Secret.getPassword());
+        getLoginPasswordInput().sendKeys(password);
         driver.hideKeyboard();
 
         WebElement login_button = getLoginButton();
