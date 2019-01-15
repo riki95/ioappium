@@ -85,11 +85,8 @@ public class HomePage {
         login_button.click();
     }
 
-    public void clicScrollDown() {
+    public void goToDemo() {
         getTextBelow().click();
-    }
-
-    public void clicDemoButton() {
         getDemoButton().click();
     }
 }

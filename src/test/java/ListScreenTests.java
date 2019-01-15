@@ -7,7 +7,6 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
 import java.net.MalformedURLException;
 
 public class ListScreenTests {
@@ -22,20 +21,17 @@ public class ListScreenTests {
     @Test
     public void checkTitleNameInListEqualToSingleReportScreen() {
         HomePage homePage = new HomePage(driver);
-        homePage.getTextBelow().click();
-        homePage.getDemoButton().click();
+        homePage.goToDemo();
 
         AppPage appPage = new AppPage(driver);
-        appPage.getListButton().click();
+        appPage.goToList();
 
         ListPage listPage = new ListPage(driver);
-        WebElement firstElement = listPage.getFirstListElement();
-        String titleInList = firstElement.getText();
-        firstElement.click();
+        String firstElementTitle = listPage.getFirstElementText();
+        listPage.clicFirstElementInList();
 
         SingleReportPage singleReportPage = new SingleReportPage(driver);
-
-        Assert.assertEquals(titleInList, singleReportPage.getReportTitle().getText());
+        Assert.assertEquals(firstElementTitle, singleReportPage.getReportTitleText());
     }
 
     @After

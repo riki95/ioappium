@@ -39,4 +39,8 @@ public class AppPage {
         }
         catch (Exception e) { return null; }
     }
+
+    public void goToList() {
+        getListButton().click();
+    }
 }

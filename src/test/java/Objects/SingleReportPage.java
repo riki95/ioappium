@@ -23,4 +23,7 @@ public class SingleReportPage {
         catch (Exception e) { return null; }
     }
 
+    public String getReportTitleText() {
+        return getReportTitle().getText();
+    }
 }

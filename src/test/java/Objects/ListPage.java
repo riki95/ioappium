@@ -23,4 +23,11 @@ public class ListPage {
         catch (Exception e) { return null; }
     }
 
+    public String getFirstElementText() {
+        return getFirstListElement().getText();
+    }
+
+    public void clicFirstElementInList() {
+        getFirstListElement().click();
+    }
 }
