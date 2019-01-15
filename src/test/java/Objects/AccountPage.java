@@ -23,4 +23,14 @@ public class AccountPage {
         catch (Exception e) { return null; }
     }
 
+    public WebElement getResetButton() {
+        try {
+            new WebDriverWait(driver, 7)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("reset-button")));
+            return driver.findElementByAccessibilityId("reset-button");
+
+        }
+        catch (Exception e) { return null; }
+    }
+
 }

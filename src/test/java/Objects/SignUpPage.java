@@ -92,4 +92,22 @@ public class SignUpPage {
         }
         catch (Exception e) { return null; }
     }
+
+    public void doSignUp(String ssn, String email, String password) {
+        getSsnInput().sendKeys(ssn);
+        driver.hideKeyboard();
+
+        getEmailInput().sendKeys(email);
+        driver.hideKeyboard();
+
+        getPasswordInput().sendKeys(password);
+        driver.hideKeyboard();
+
+        getConfirmButton().sendKeys(password);
+        driver.hideKeyboard();
+
+        getCheckbox().click();
+
+        getSignUpButton().click();
+    }
 }

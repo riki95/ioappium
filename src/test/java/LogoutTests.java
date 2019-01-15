@@ -6,6 +6,9 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
 import java.net.MalformedURLException;
 
 public class LogoutTests {
@@ -27,6 +30,12 @@ public class LogoutTests {
         new AppPage(driver).getAccountButton().click();
 
         AccountPage accountPage = new AccountPage(driver);
+
+        WebElement reset = accountPage.getResetButton();
+        Actions action = new Actions(driver);
+        action.moveToElement(reset);
+        action.perform();
+
         accountPage.getLogoutButton().click();
         driver.findElementByXPath("//*[@text='OK']").click();
 

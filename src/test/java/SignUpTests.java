@@ -18,23 +18,7 @@ public class SignUpTests {
         driver = CapabilitiesSetter.DriverCreator();
     }
 
-    public static void doSignUp(AndroidDriver driver, SignUpPage signUpPage, String ssn, String email, String password) {
-        signUpPage.getSsnInput().sendKeys(ssn);
-        driver.hideKeyboard();
 
-        signUpPage.getEmailInput().sendKeys(email);
-        driver.hideKeyboard();
-
-        signUpPage.getPasswordInput().sendKeys(password);
-        driver.hideKeyboard();
-
-        signUpPage.getConfirmButton().sendKeys(password);
-        driver.hideKeyboard();
-
-        signUpPage.getCheckbox().click();
-
-        signUpPage.getSignUpButton().click();
-    }
 
     @Test
     public void checkSignupWorks() {
@@ -42,7 +26,8 @@ public class SignUpTests {
         SignUpPage signUpPage = new SignUpPage(driver);
 
         User user = new User();
-        doSignUp(driver, signUpPage, user.getSsn(), user.getEmail(), user.getPassword());
+        SignUpPage signUp = new SignUpPage(driver);
+        signUp.doSignUp(user.getSsn(), user.getEmail(), user.getPassword());
 
         Assert.assertEquals(signUpPage.getSuccessText().getText(), "Registrazione effettuata con successo!");
     }
@@ -53,7 +38,8 @@ public class SignUpTests {
         SignUpPage signUpPage = new SignUpPage(driver);
 
         User user = new User();
-        doSignUp(driver, signUpPage, ssn, user.getEmail(), user.getPassword());
+        SignUpPage signUp = new SignUpPage(driver);
+        signUp.doSignUp(ssn, user.getEmail(), user.getPassword());
 
         Assert.assertEquals(signUpPage.getAlreadyRegisteredText().getText(), "Utente o codice fiscale già registrato");
     }
@@ -64,7 +50,8 @@ public class SignUpTests {
         SignUpPage signUpPage = new SignUpPage(driver);
 
         User user = new User();
-        doSignUp(driver, signUpPage, user.getSsn(), "test@test.test", user.getPassword());
+        SignUpPage signUp = new SignUpPage(driver);
+        signUp.doSignUp(user.getSsn(), "test@test.test", user.getPassword());
 
         Assert.assertEquals(signUpPage.getAlreadyRegisteredText().getText(), "Utente o codice fiscale già registrato");
     }
