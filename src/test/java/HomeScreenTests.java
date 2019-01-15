@@ -17,8 +17,8 @@ public class HomeScreenTests {
     @Test
     public void demoButtonWorks() {
         HomePage homepage = new HomePage(driver);
-        homepage.getTextBelow().click();
-        homepage.getDemoButton().click();
+        homepage.clicScrollDown();
+        homepage.clicDemoButton();
     }
 
     @After
