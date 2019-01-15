@@ -31,7 +31,7 @@ public class ListScreenTests {
         listPage.clicFirstElementInList();
 
         SingleReportPage singleReportPage = new SingleReportPage(driver);
-        Assert.assertEquals(firstElementTitle, singleReportPage.getReportTitleText());
+        Assert.assertEquals(firstElementTitle, singleReportPage.getReportTitle());
     }
 
     @After

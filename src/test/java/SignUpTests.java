@@ -18,42 +18,37 @@ public class SignUpTests {
         driver = CapabilitiesSetter.DriverCreator();
     }
 
-
-
     @Test
     public void checkSignupWorks() {
-        new HomePage(driver).getSignUpButton().click();
-        SignUpPage signUpPage = new SignUpPage(driver);
+        new HomePage(driver).goToSignUp();
 
         User user = new User();
-        SignUpPage signUp = new SignUpPage(driver);
-        signUp.doSignUp(user.getSsn(), user.getEmail(), user.getPassword());
+        SignUpPage signUpPage = new SignUpPage(driver);
+        signUpPage.doSignUp(user.getSsn(), user.getEmail(), user.getPassword());
 
-        Assert.assertEquals(signUpPage.getSuccessText().getText(), "Registrazione effettuata con successo!");
+        Assert.assertEquals(signUpPage.getSuccessText(), "Registrazione effettuata con successo!");
     }
 
     @Test
     public void checkWrongSn() {
         new HomePage(driver).getSignUpButton().click();
+
         SignUpPage signUpPage = new SignUpPage(driver);
-
         User user = new User();
-        SignUpPage signUp = new SignUpPage(driver);
-        signUp.doSignUp(ssn, user.getEmail(), user.getPassword());
+        signUpPage.doSignUp(ssn, user.getEmail(), user.getPassword());
 
-        Assert.assertEquals(signUpPage.getAlreadyRegisteredText().getText(), "Utente o codice fiscale già registrato");
+        Assert.assertEquals(signUpPage.getAlreadyRegisteredText(), "Utente o codice fiscale già registrato");
     }
 
     @Test
     public void checkWrongEmail() {
         new HomePage(driver).getSignUpButton().click();
+
         SignUpPage signUpPage = new SignUpPage(driver);
-
         User user = new User();
-        SignUpPage signUp = new SignUpPage(driver);
-        signUp.doSignUp(user.getSsn(), "test@test.test", user.getPassword());
+        signUpPage.doSignUp(user.getSsn(), "test@test.test", user.getPassword());
 
-        Assert.assertEquals(signUpPage.getAlreadyRegisteredText().getText(), "Utente o codice fiscale già registrato");
+        Assert.assertEquals(signUpPage.getAlreadyRegisteredText(), "Utente o codice fiscale già registrato");
     }
 
     @After

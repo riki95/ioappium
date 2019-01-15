@@ -1,22 +1,13 @@
 import Objects.AccountPage;
 import Objects.AppPage;
 import Objects.HomePage;
-import io.appium.java_client.MobileDriver;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.touch.offset.PointOption;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-
 
 import java.net.MalformedURLException;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class LogoutTests {
 
@@ -35,11 +26,11 @@ public class LogoutTests {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin(username, password);
 
-        new AppPage(driver).getAccountButton().click();
+        new AppPage(driver).goToAccountPage();
         AccountPage accountPage = new AccountPage(driver);
 
+        //Scroll down to Logout Button and Clic
 
-        TimeUnit.SECONDS.sleep(5);
     }
 
     @After

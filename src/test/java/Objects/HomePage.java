@@ -89,4 +89,8 @@ public class HomePage {
         getTextBelow().click();
         getDemoButton().click();
     }
+
+    public void goToSignUp() {
+        getSignUpButton().click();
+    }
 }

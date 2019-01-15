@@ -25,7 +25,7 @@ public class LoginScreenTests {
         homepage.doLogin(username, password);
 
         AppPage appPage = new AppPage(driver);
-        Assert.assertEquals(appPage.getListButton().getText(), "Lista");
+        Assert.assertEquals(appPage.getListButtonText(), "Lista");
     }
 
     @After

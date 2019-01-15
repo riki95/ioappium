@@ -43,4 +43,12 @@ public class AppPage {
     public void goToList() {
         getListButton().click();
     }
+
+    public String getListButtonText() {
+        return getListButton().getText();
+    }
+
+    public void goToAccountPage() {
+        getAccountButton().click();
+    }
 }

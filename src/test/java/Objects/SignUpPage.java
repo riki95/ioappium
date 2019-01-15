@@ -63,21 +63,21 @@ public class SignUpPage {
         catch (Exception e) { return null; }
     }
 
-    public WebElement getSuccessText() {
+    public String getSuccessText() {
         try {
             new WebDriverWait(driver, 5)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='Registrazione effettuata con successo!']")));
-            return driver.findElementByXPath("//*[@text='Registrazione effettuata con successo!']");
+            return driver.findElementByXPath("//*[@text='Registrazione effettuata con successo!']").getText();
 
         }
         catch (Exception e) { return null; }
     }
 
-    public WebElement getAlreadyRegisteredText() {
+    public String getAlreadyRegisteredText() {
         try {
             new WebDriverWait(driver, 5)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='Utente o codice fiscale già registrato']")));
-            return driver.findElementByXPath("//*[@text='Utente o codice fiscale già registrato']");
+            return driver.findElementByXPath("//*[@text='Utente o codice fiscale già registrato']").getText();
 
         }
         catch (Exception e) { return null; }
