@@ -33,4 +33,14 @@ public class AccountPage {
         catch (Exception e) { return null; }
     }
 
+    public WebElement getConfirmPassword() {
+        try {
+            new WebDriverWait(driver, 7)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("account-confirm-password")));
+            return driver.findElementByAccessibilityId("account-confirm-password");
+
+        }
+        catch (Exception e) { return null; }
+    }
+
 }
