@@ -9,7 +9,6 @@ import org.junit.Test;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 public class AddReportScreenTests {
 
@@ -28,10 +27,8 @@ public class AddReportScreenTests {
         homepage.doLogin(username, password);
 
         MapPage mapPage = new MapPage(driver);
-        WebElement addReportButton = mapPage.getAddReportButton();
-        // clic one time to add and one time to undo cause + button is replaced by undo one
-        addReportButton.click();
-        addReportButton.click();
+        mapPage.clicAddReportButton();
+        mapPage.clicUndoReportButton();
     }
 
     @Test
@@ -40,23 +37,21 @@ public class AddReportScreenTests {
         homepage.doLogin(username, password);
 
         MapPage mapPage = new MapPage(driver);
-        mapPage.getAddReportButton().click();
-        mapPage.getConfirmReportButton().click();
+        mapPage.clicAddReportButton();
+        mapPage.clicConfirmReportButton();
 
         AddReportPage addReportPage = new AddReportPage(driver);
-        addReportPage.getInputTitle().sendKeys("titolo");
+        addReportPage.sendInputTitle("titolo");
         driver.hideKeyboard();
 
-        addReportPage.getInputDescr().sendKeys("descrizione");
+        addReportPage.sendInputDescr("descrizione");
         driver.hideKeyboard();
 
-        WebElement buttonSend = addReportPage.getButtonSend();
-        buttonSend.click();
-        buttonSend.click();
+        addReportPage.clicButtonSend();
 
-        addReportPage.getConfirmReportButton().click();
-        String successText = driver.findElement(By.xpath("//*[@text='Segnalazione effettuata con successo!']")).getText();
-        addReportPage.getConfirmReportButton().click();
+        addReportPage.clicConfirmReportButton();
+        String successText = addReportPage.getSuccessText();
+        addReportPage.clicConfirmReportButton();
 
         Assert.assertEquals(successText, "Segnalazione effettuata con successo!");
     }

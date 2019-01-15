@@ -30,4 +30,16 @@ public class MapPage {
         }
         catch (Exception e) { return null; }
     }
+
+    public void clicAddReportButton() {
+        getAddReportButton().click();
+    }
+
+    public void clicUndoReportButton() {
+        getAddReportButton().click();
+    }
+
+    public void clicConfirmReportButton() {
+        getConfirmReportButton().click();
+    }
 }
