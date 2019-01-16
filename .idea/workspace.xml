@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/MapPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LogoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HomeScreenTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomeScreenTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LogoutTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/AccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,10 +19,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AccountPageTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="86">
+              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MapPageTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AccountPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+            <state relative-caret-position="304">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1919#1920#0" expanded="true" />
@@ -106,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Objects/UserPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/Secret.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/User.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" />
@@ -114,14 +134,16 @@
         <option value="$PROJECT_DIR$/src/test/java/Objects/AppPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SignUpTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ListScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/LogoutTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" />
         <option value="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AccountPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AccountPageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MapPageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" />
       </list>
     </option>
   </component>
@@ -133,8 +155,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="175" />
-    <option name="y" value="36" />
+    <option name="x" value="201" />
+    <option name="y" value="29" />
     <option name="width" value="1108" />
     <option name="height" value="833" />
   </component>
@@ -190,7 +212,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547647662423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547650624899" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -214,7 +236,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountPageTests">
+  <component name="RunManager" selected="JUnit.MapPageTests.checkAccountPageShowsCorrectEmail">
     <configuration name="AccountPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
@@ -244,14 +266,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in io-appium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="io-appium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HomeScreenTests.demoButtonWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
@@ -262,20 +276,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MapPageTests.checkAccountPageShowsCorrectEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="io-appium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapPageTests" />
+      <option name="METHOD_NAME" value="checkAccountPageShowsCorrectEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.All in io-appium" />
       <item itemvalue="JUnit.HomeScreenTests.demoButtonWorks" />
       <item itemvalue="JUnit.AccountPageTests.checkLogoutWorks" />
       <item itemvalue="JUnit.AccountPageTests.checkAccountPageShowsCorrectEmail" />
       <item itemvalue="JUnit.AccountPageTests" />
+      <item itemvalue="JUnit.MapPageTests.checkAccountPageShowsCorrectEmail" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapPageTests.checkAccountPageShowsCorrectEmail" />
         <item itemvalue="JUnit.AccountPageTests" />
         <item itemvalue="JUnit.AccountPageTests.checkAccountPageShowsCorrectEmail" />
         <item itemvalue="JUnit.AccountPageTests.checkLogoutWorks" />
         <item itemvalue="JUnit.HomeScreenTests.demoButtonWorks" />
-        <item itemvalue="JUnit.All in io-appium" />
       </list>
     </recent_temporary>
   </component>
@@ -303,47 +327,47 @@
       <workItem from="1547544233426" duration="3420000" />
       <workItem from="1547588265387" duration="1588000" />
       <workItem from="1547631649175" duration="4394000" />
-      <workItem from="1547644556087" duration="2700000" />
+      <workItem from="1547644556087" duration="4564000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.16 at 14h 20m 17s.xml">
-      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HomeScreenTests_demoButtonWorks - 2019.01.16 at 14h 31m 01s.xml">
-      <configuration name="HomeScreenTests.demoButtonWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.16 at 14h 40m 25s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.16 at 14h 41m 30s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.16 at 14h 43m 15s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.16 at 14h 45m 44s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.16 at 14h 46m 43s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.16 at 14h 50m 56s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.16 at 14h 52m 06s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.16 at 14h 53m 52s.xml">
       <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AccountPageTests_checkAccountPageShowsCorrectEmail - 2019.01.16 at 15h 07m 39s.xml">
+      <configuration name="AccountPageTests.checkAccountPageShowsCorrectEmail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountPageTests - 2019.01.16 at 15h 08m 39s.xml">
+      <configuration name="AccountPageTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapPageTests_checkAccountPageShowsCorrectEmail - 2019.01.16 at 15h 42m 49s.xml">
+      <configuration name="MapPageTests.checkAccountPageShowsCorrectEmail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapPageTests_checkAccountPageShowsCorrectEmail - 2019.01.16 at 15h 48m 04s.xml">
+      <configuration name="MapPageTests.checkAccountPageShowsCorrectEmail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapPageTests_checkAccountPageShowsCorrectEmail - 2019.01.16 at 15h 48m 46s.xml">
+      <configuration name="MapPageTests.checkAccountPageShowsCorrectEmail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapPageTests_checkAccountPageShowsCorrectEmail - 2019.01.16 at 15h 50m 42s.xml">
+      <configuration name="MapPageTests.checkAccountPageShowsCorrectEmail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapPageTests_checkAccountPageShowsCorrectEmail - 2019.01.16 at 15h 54m 36s.xml">
+      <configuration name="MapPageTests.checkAccountPageShowsCorrectEmail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapPageTests_checkAccountPageShowsCorrectEmail - 2019.01.16 at 15h 55m 21s.xml">
+      <configuration name="MapPageTests.checkAccountPageShowsCorrectEmail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapPageTests_checkAccountPageShowsCorrectEmail - 2019.01.16 at 15h 57m 51s.xml">
+      <configuration name="MapPageTests.checkAccountPageShowsCorrectEmail" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66771000" />
+    <option name="totallyTimeSpent" value="68635000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="175" y="36" width="1108" height="833" extended-state="0" />
+    <frame x="201" y="29" width="1108" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20450282" />
@@ -356,7 +380,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32833788" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23076923" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23076923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,18 +426,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/Objects/prova.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/MapPageScreenTests.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/SingleReportTests.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -441,13 +453,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -547,6 +552,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AccountPageTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MapPageTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
@@ -559,20 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AccountPageTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+        <state relative-caret-position="304">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1919#1920#0" expanded="true" />

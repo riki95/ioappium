@@ -12,7 +12,7 @@ public class SingleReportPage {
         this.driver = driver;
     }
 
-    public String getReportTitle() {
+    public String getReportTitleText() {
         try {
             new WebDriverWait(driver, 5)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("title-singlereport")));
