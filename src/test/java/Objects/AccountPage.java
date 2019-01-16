@@ -45,8 +45,27 @@ public class AccountPage {
         catch (Exception e) { return null; }
     }
 
+    private WebElement getConfirmLogoutButton() {
+        try {
+            new WebDriverWait(driver, 5)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='OK']")));
+            return driver.findElementByXPath("//*[@text='OK']");
+        }
+        catch (Exception e) { return null; }
+    }
+
+    public WebElement getEmail() {
+        try {
+            new WebDriverWait(driver, 7)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("account-email")));
+            return driver.findElementByAccessibilityId("account-email");
+
+        }
+        catch (Exception e) { return null; }
+    }
+
     public void goToBottom() {
-        new TouchAction<>(driver).press(PointOption.point(538, 1700))
+        new TouchAction<>(driver).press(PointOption.point(538, 1500))
                 .waitAction().moveTo(PointOption.point(538, 100))
                 .release().perform();
     }
@@ -54,5 +73,13 @@ public class AccountPage {
     public void doLogout() {
         goToBottom();
         getLogoutButton().click();
+    }
+
+    public void clicConfirmLogout() {
+        getConfirmLogoutButton().click();
+    }
+
+    public String getEmailText() {
+        return getEmail().getText();
     }
 }
