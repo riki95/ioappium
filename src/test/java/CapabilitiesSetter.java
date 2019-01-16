@@ -19,7 +19,7 @@ public class CapabilitiesSetter {
 
         URL remoteUrl = new URL("http://localhost:4723/wd/hub");
 
-        return new AndroidDriver<MobileElement>(remoteUrl, desiredCapabilities);
+        return new AndroidDriver<>(remoteUrl, desiredCapabilities);
     }
 
     private static void setDeviceCapabilities(DesiredCapabilities desiredCapabilities) {

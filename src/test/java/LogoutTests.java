@@ -28,8 +28,7 @@ public class LogoutTests {
 
         new AppPage(driver).goToAccountPage();
         AccountPage accountPage = new AccountPage(driver);
-
-        //Scroll down to Logout Button and Clic
+        accountPage.doLogout();
 
     }
 
