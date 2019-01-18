@@ -12,39 +12,41 @@ public class VoteTests {
     private AndroidDriver driver;
     String username = "test@test.test";
     String password = "testtest";
-    String username2 = "report-votes@test.test";
-    String password2 = "password";
     String location = "Cabella Ligure";
     String completeLocation = "Cabella Ligure, Province of Alessandria, Italy";
-    String location2 = "Ronco Scrivia";
-    String completeLocation2 = "Ronco Scrivia, Metropolitan City of Genoa, Italy";
+
+    String username_reports = "report-votes@test.test";
+    String password_reports = "password";
+    String location_reports = "Ronco Scrivia";
+    String completeLocation_reports = "Ronco Scrivia, Metropolitan City of Genoa, Italy";
 
     @Before
     public void setUp() throws MalformedURLException {
         driver = CapabilitiesSetter.DriverCreator();
     }
 
-    private void loginAccount1andMakeReport() throws InterruptedException {
-        goToTestLocation(username2, password2, location2, completeLocation2);
+    private void goToTestLocation(String username, String password, String location, String completeLocation) {
+        new HomePage(driver).doLogin(username, password);
+        new MapPage(driver).goToLocation(location, completeLocation);
+    }
+
+    private void loginReportAccountAndMakeReportThenLogout() throws InterruptedException {
+        goToTestLocation(username_reports, password_reports, location_reports, completeLocation_reports);
         new MapPage(driver).clickAndAddReport("test", "test");
         new AppPage(driver).goToAccountPage();
         new AccountPage(driver).doLogout();
     }
 
-    private void goToTestLocation(String username, String password, String location, String completeLocation) {
-        HomePage homepage = new HomePage(driver);
-        homepage.doLogin(username, password);
-
-        MapPage mapPage = new MapPage(driver);
-        mapPage.goToLocation(location, completeLocation);
+    public void openNewReport() {
+        new AppPage(driver).goToList();
+        new ListPage(driver).getFirstListElement().click();
     }
 
     @Test
     public void checkVoteMyReportNotWorks() {
         goToTestLocation(username, password, location, completeLocation);
         new MapPage(driver).clickAndAddReport("test", "test");
-        new AppPage(driver).goToList();
-        new ListPage(driver).getFirstListElement().click();
+        openNewReport();
 
         String result = new SingleReportPage(driver).votePositive();
         Assert.assertEquals(result, "No Button");
@@ -52,15 +54,12 @@ public class VoteTests {
 
     @Test
     public void checkVoteOtherReportWorks() throws InterruptedException {
-        loginAccount1andMakeReport();
+        loginReportAccountAndMakeReportThenLogout(); // Make the report before testing it
 
-        goToTestLocation(username, password, location2, completeLocation2);
-        MapPage mapPage = new MapPage(driver);
-        mapPage.clickOnZoomButton();
-        mapPage.clickOnUpdateMakersButton();
+        goToTestLocation(username, password, location_reports, completeLocation_reports);
+        new MapPage(driver).updateMakers();
 
-        new AppPage(driver).goToList();
-        new ListPage(driver).getFirstListElement().click();
+        openNewReport();
         String result = new SingleReportPage(driver).votePositive();
         Assert.assertEquals(result, "Vote ok");
     }

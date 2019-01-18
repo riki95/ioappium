@@ -1,15 +1,12 @@
 package Objects;
 
 import io.appium.java_client.MobileBy;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
 
 public class MapPage {
     private AndroidDriver driver;
@@ -65,6 +62,15 @@ public class MapPage {
         catch (Exception e) { }
     }
 
+    public void clickOnResult(String completeLocation) {
+        try {
+            new WebDriverWait(driver, 10)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='" + completeLocation + "']")));
+            driver.findElement(MobileBy.xpath("//*[@text='" + completeLocation + "']")).click();
+        }
+        catch (Exception e) { }
+    }
+
     public void clicAddReportButton() {
         getAddReportButton().click();
     }
@@ -82,52 +88,15 @@ public class MapPage {
         clickOnResult(completeLocation);
     }
 
-    public void clickOnResult(String completeLocation) {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='" + completeLocation + "']")));
-            driver.findElement(MobileBy.xpath("//*[@text='" + completeLocation + "']")).click();
-        }
-        catch (Exception e) { }
-    }
-
-    //TODO - In test
-    public void prova(String testLocation) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(3);
-        driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys(testLocation);
-        TimeUnit.SECONDS.sleep(3);
-        new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Casale Monferrato, Province of Alessandria, Italy']")));
-        driver.findElement(By.xpath("//*[@text='Casale Monferrato, Province of Alessandria, Italy']")).click();
-        TimeUnit.SECONDS.sleep(3);
-        driver.findElement(By.xpath("//*[@text='Update']")).click();
-        TimeUnit.SECONDS.sleep(3);
-
-        new TouchAction<>(driver).tap(PointOption.point(533, 906)).perform();
-        new TouchAction<>(driver).tap(PointOption.point(533, 906)).perform();
-        TimeUnit.SECONDS.sleep(1);
-
-        new TouchAction<>(driver).tap(PointOption.point(480, 760)).perform();
-        new TouchAction<>(driver).tap(PointOption.point(480, 760)).perform();
-
-        TimeUnit.SECONDS.sleep(1);
-
-        new TouchAction<>(driver).tap(PointOption.point(470, 560)).perform();
-        new TouchAction<>(driver).tap(PointOption.point(470, 560)).perform();
-
-        TimeUnit.SECONDS.sleep(1);
-
-        new TouchAction<>(driver).tap(PointOption.point(488, 588)).perform();
-        new TouchAction<>(driver).tap(PointOption.point(488, 588)).perform();
-
-
-
-
-    }
-
     public String clickAndAddReport(String title, String descr) {
         clicAddReportButton();
         clicConfirmReportButton();
 
         return new AddReportPage(driver).addReport(title, descr);
+    }
+
+    public void updateMakers() {
+        clickOnZoomButton();
+        clickOnUpdateMakersButton();
     }
 }

@@ -3,7 +3,6 @@ package Objects;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,16 +13,6 @@ public class HomePage {
 
     public HomePage(AndroidDriver driver) {
         this.driver = driver;
-    }
-
-    public WebElement getTextBelow() {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("text-below")));
-            return driver.findElementByAccessibilityId("text-below");
-
-        }
-        catch (Exception e) { return null; }
     }
 
     public WebElement getDemoButton() {

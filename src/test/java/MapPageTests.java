@@ -15,4 +15,5 @@ public class MapPageTests {
         driver = CapabilitiesSetter.DriverCreator();
     }
 
+    //TODO - Problems interacting with Map
 }

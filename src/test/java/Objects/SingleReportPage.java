@@ -37,8 +37,8 @@ public class SingleReportPage {
             new WebDriverWait(driver, 5)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("vote-up")));
             driver.findElementByAccessibilityId("vote-up").click();
+            getConfirmVoteButton();
             return "Vote ok";
-
         }
         catch (Exception e) { return "No Button"; }
     }
