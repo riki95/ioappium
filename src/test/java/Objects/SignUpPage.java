@@ -1,7 +1,9 @@
 package Objects;
 
 import io.appium.java_client.MobileBy;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -93,6 +95,12 @@ public class SignUpPage {
         catch (Exception e) { return null; }
     }
 
+    public void goToBottom() {
+        new TouchAction<>(driver).press(PointOption.point(538, 1400))
+                .waitAction().moveTo(PointOption.point(538, 100))
+                .release().perform();
+    }
+
     public void doSignUp(String ssn, String email, String password) {
         getSsnInput().sendKeys(ssn);
         driver.hideKeyboard();
@@ -105,6 +113,8 @@ public class SignUpPage {
 
         getConfirmButton().sendKeys(password);
         driver.hideKeyboard();
+
+        goToBottom();
 
         getCheckbox().click();
 
