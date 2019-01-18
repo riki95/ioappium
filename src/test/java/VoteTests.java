@@ -1,16 +1,18 @@
-import Objects.AppPage;
+import Objects.AddReportPage;
+import Objects.HomePage;
+import Objects.MapPage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import Objects.HomePage;
-
 import java.net.MalformedURLException;
 
-public class HomeScreenTests {
+public class VoteTests {
 
     private AndroidDriver driver;
+    String username = "test@test.test";
+    String password = "testtest";
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -18,13 +20,15 @@ public class HomeScreenTests {
     }
 
     @Test
-    public void checkDemoButtonWorks() {
+    public void checkUndoReportWorks() {
         HomePage homepage = new HomePage(driver);
-        homepage.goToDemo();
+        homepage.doLogin(username, password);
 
-        AppPage appPage = new AppPage(driver);
-        Assert.assertEquals(appPage.getListButtonText(), "Lista");
+        MapPage mapPage = new MapPage(driver);
+        mapPage.clicAddReportButton();
+        mapPage.clicUndoReportButton();
     }
+
 
     @After
     public void tearDown() {

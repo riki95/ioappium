@@ -8,8 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 import java.net.MalformedURLException;
 
-import org.openqa.selenium.By;
-
 public class AddReportScreenTests {
 
     private AndroidDriver driver;
@@ -22,7 +20,7 @@ public class AddReportScreenTests {
     }
 
     @Test
-    public void undoReport() {
+    public void checkUndoReportWorks() {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin(username, password);
 
@@ -32,7 +30,7 @@ public class AddReportScreenTests {
     }
 
     @Test
-    public void addReport() {
+    public void checkAddReportWorks() {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin(username, password);
 
@@ -41,19 +39,8 @@ public class AddReportScreenTests {
         mapPage.clicConfirmReportButton();
 
         AddReportPage addReportPage = new AddReportPage(driver);
-        addReportPage.sendInputTitle("titolo");
-        driver.hideKeyboard();
-
-        addReportPage.sendInputDescr("descrizione");
-        driver.hideKeyboard();
-
-        addReportPage.clicButtonSend();
-
-        addReportPage.clicConfirmReportButton();
-        String successText = addReportPage.getSuccessText();
-        addReportPage.clicConfirmReportButton();
-
-        Assert.assertEquals(successText, "Segnalazione effettuata con successo!");
+        String result = addReportPage.addReport("titolo", "descrizione");
+        Assert.assertEquals(result, "Segnalazione effettuata con successo!");
     }
 
     @After

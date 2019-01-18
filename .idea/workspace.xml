@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/MapPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,68 +16,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MapPageTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AccountPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AddReportScreenTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="499">
+              <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1919#1920#0" expanded="true" />
-                <element signature="e#1950#1951#0" expanded="true" />
-                <element signature="e#2689#2690#0" expanded="true" />
-                <element signature="e#2715#2716#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/HomePage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+            <state relative-caret-position="544">
+              <caret line="84" column="43" lean-forward="true" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3587#3588#0" expanded="true" />
-                <element signature="e#3636#3637#0" expanded="true" />
+                <element signature="e#1956#1957#0" expanded="true" />
+                <element signature="e#2009#2010#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,8 +84,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Objects/UserPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/Secret.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/User.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/AppPage.java" />
@@ -137,13 +92,15 @@
         <option value="$PROJECT_DIR$/src/test/java/ListScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/LogoutTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/AccountPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/MapPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" />
       </list>
     </option>
   </component>
@@ -155,8 +112,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="201" />
-    <option name="y" value="29" />
+    <option name="x" value="220" />
+    <option name="y" value="23" />
     <option name="width" value="1108" />
     <option name="height" value="833" />
   </component>
@@ -168,8 +125,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,12 +162,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547650624899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547806069618" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -328,6 +285,7 @@
       <workItem from="1547588265387" duration="1588000" />
       <workItem from="1547631649175" duration="4394000" />
       <workItem from="1547644556087" duration="4564000" />
+      <workItem from="1547804723401" duration="1279000" />
     </task>
     <servers />
   </component>
@@ -364,13 +322,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68635000" />
+    <option name="totallyTimeSpent" value="69914000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="201" y="29" width="1108" height="833" extended-state="0" />
+    <frame x="220" y="23" width="1108" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20450282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20825516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -426,16 +384,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/Objects/prova.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/MapPageScreenTests.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/SingleReportTests.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -446,40 +394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="50" column="65" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,73 +431,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-47">
           <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddReportScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="53" column="45" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HomeScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AccountPageTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MapPageTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,28 +448,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        <state relative-caret-position="465">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3587#3588#0" expanded="true" />
-            <element signature="e#3636#3637#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="100">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1919#1920#0" expanded="true" />
-            <element signature="e#1950#1951#0" expanded="true" />
             <element signature="e#2689#2690#0" expanded="true" />
-            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="100" column="30" lean-forward="true" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HomeScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LoginScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MapPageTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="50" column="65" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AccountPageTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="84" column="43" lean-forward="true" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddReportScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

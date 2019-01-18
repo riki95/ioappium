@@ -71,4 +71,19 @@ public class AddReportPage {
     public String getSuccessText() {
         return driver.findElement(By.xpath("//*[@text='Segnalazione effettuata con successo!']")).getText();
     }
+
+    public String addReport(String titolo, String descrizione) {
+        sendInputTitle(titolo);
+        driver.hideKeyboard();
+
+        sendInputDescr(descrizione);
+        driver.hideKeyboard();
+
+        clicButtonSend();
+        clicConfirmReportButton();
+
+        String successText = getSuccessText();
+        clicConfirmReportButton();
+        return successText;
+    }
 }
