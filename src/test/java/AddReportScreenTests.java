@@ -35,11 +35,8 @@ public class AddReportScreenTests {
         homepage.doLogin(username, password);
 
         MapPage mapPage = new MapPage(driver);
-        mapPage.clicAddReportButton();
-        mapPage.clicConfirmReportButton();
+        String result = mapPage.clickAndAddReport("test", "test");
 
-        AddReportPage addReportPage = new AddReportPage(driver);
-        String result = addReportPage.addReport("titolo", "descrizione");
         Assert.assertEquals(result, "Segnalazione effettuata con successo!");
     }
 

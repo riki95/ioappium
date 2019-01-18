@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 public class AccountPage {
     private AndroidDriver driver;
 
@@ -65,14 +67,17 @@ public class AccountPage {
     }
 
     public void goToBottom() {
-        new TouchAction<>(driver).press(PointOption.point(538, 1500))
+        new TouchAction<>(driver).press(PointOption.point(538, 1200))
                 .waitAction().moveTo(PointOption.point(538, 100))
                 .release().perform();
     }
 
-    public void doLogout() {
+    public void doLogout() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+
         goToBottom();
         getLogoutButton().click();
+        clicConfirmLogout();
     }
 
     public void clicConfirmLogout() {

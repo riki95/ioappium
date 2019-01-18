@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 public class MapPage {
@@ -37,6 +36,35 @@ public class MapPage {
         catch (Exception e) { return null; }
     }
 
+    public WebElement getSearchBar() {
+        try {
+            new WebDriverWait(driver, 10)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@class='android.widget.EditText']")));
+            return driver.findElement(By.xpath("//*[@class='android.widget.EditText']"));
+
+
+        }
+        catch (Exception e) { return null; }
+    }
+
+    public void clickOnZoomButton() {
+        try {
+            new WebDriverWait(driver, 10)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("zoom-button")));
+            driver.findElementByAccessibilityId("zoom-button").click();
+        }
+        catch (Exception e) { }
+    }
+
+    public void clickOnUpdateMakersButton() {
+        try {
+            new WebDriverWait(driver, 10)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("update-markers-button")));
+            driver.findElementByAccessibilityId("update-markers-button").click();
+        }
+        catch (Exception e) { }
+    }
+
     public void clicAddReportButton() {
         getAddReportButton().click();
     }
@@ -49,19 +77,22 @@ public class MapPage {
         getConfirmReportButton().click();
     }
 
-    public void enterTestMarker() throws InterruptedException {
-        clicTestMarker();
+    public void goToLocation(String location, String completeLocation) {
+        getSearchBar().sendKeys(location);
+        clickOnResult(completeLocation);
     }
 
-    private void clicTestMarker() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(3);
-        driver.findElement(MobileBy.xpath("(//*[@contentDescription='Google Maps']/*[@class='android.view.View'])[1]")).click();
-        TimeUnit.SECONDS.sleep(3);
-        driver.findElement(MobileBy.xpath("//*[@class='android.view.ViewGroup' and ./*[@class='android.view.ViewGroup' and ./*[@contentDescription='button-add']]]")).click();
+    public void clickOnResult(String completeLocation) {
+        try {
+            new WebDriverWait(driver, 10)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='" + completeLocation + "']")));
+            driver.findElement(MobileBy.xpath("//*[@text='" + completeLocation + "']")).click();
+        }
+        catch (Exception e) { }
     }
 
     //TODO - In test
-    public void goToLocation(String testLocation) throws InterruptedException {
+    public void prova(String testLocation) throws InterruptedException {
         TimeUnit.SECONDS.sleep(3);
         driver.findElement(By.xpath("//*[@class='android.widget.EditText']")).sendKeys(testLocation);
         TimeUnit.SECONDS.sleep(3);
@@ -91,5 +122,12 @@ public class MapPage {
 
 
 
+    }
+
+    public String clickAndAddReport(String title, String descr) {
+        clicAddReportButton();
+        clicConfirmReportButton();
+
+        return new AddReportPage(driver).addReport(title, descr);
     }
 }

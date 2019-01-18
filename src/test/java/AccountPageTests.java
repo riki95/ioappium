@@ -33,7 +33,7 @@ public class AccountPageTests {
     }
 
     @Test
-    public void checkLogoutWorks() {
+    public void checkLogoutWorks() throws InterruptedException {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin(username, password);
 
@@ -41,7 +41,6 @@ public class AccountPageTests {
         AccountPage accountPage = new AccountPage(driver);
         accountPage.doLogout();
 
-        accountPage.clicConfirmLogout();
         Assert.assertEquals(homepage.getSignUpButtonText(), "REGISTRATI");
     }
 
