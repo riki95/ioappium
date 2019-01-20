@@ -65,6 +65,28 @@ public class HomePage {
         catch (Exception e) { return null; }
     }
 
+    public String getSignUpButtonText() {
+        return getSignUpButton().getText();
+    }
+
+    public void goToDemo() {
+        getLoginEmailInput(); //Just used to wait the app to open
+        goToBottom();
+        getDemoButton().click();
+    }
+
+    public SignUpPage goToSignUp() {
+        getSignUpButton().click();
+        return new SignUpPage(driver);
+    }
+
+    public void goToBottom() {
+        new TouchAction<>(driver).press(PointOption.point(538, 1700))
+                .waitAction().moveTo(PointOption.point(538, 100))
+                .release().perform();
+    }
+
+
     public void doLogin(String username, String password) {
         getLoginEmailInput().sendKeys(username);
         driver.hideKeyboard();
@@ -75,25 +97,5 @@ public class HomePage {
         WebElement login_button = getLoginButton();
         login_button.click();
         login_button.click();
-    }
-
-    public void goToDemo() {
-        getLoginEmailInput(); //Just used to wait the app to open
-        goToBottom();
-        getDemoButton().click();
-    }
-
-    public void goToSignUp() {
-        getSignUpButton().click();
-    }
-
-    public void goToBottom() {
-        new TouchAction<>(driver).press(PointOption.point(538, 1700))
-                .waitAction().moveTo(PointOption.point(538, 100))
-                .release().perform();
-    }
-
-    public String getSignUpButtonText() {
-        return getSignUpButton().getText();
     }
 }

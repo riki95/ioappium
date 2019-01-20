@@ -20,10 +20,8 @@ public class SignUpTests {
 
     @Test
     public void checkSignupWorks() {
-        new HomePage(driver).goToSignUp();
-
+        SignUpPage signUpPage = new HomePage(driver).goToSignUp();
         User user = new User();
-        SignUpPage signUpPage = new SignUpPage(driver);
         signUpPage.doSignUp(user.getSsn(), user.getEmail(), user.getPassword());
 
         Assert.assertEquals(signUpPage.getSuccessText(), "Registrazione effettuata con successo!");
@@ -31,9 +29,7 @@ public class SignUpTests {
 
     @Test
     public void checkWrongSn() {
-        new HomePage(driver).getSignUpButton().click();
-
-        SignUpPage signUpPage = new SignUpPage(driver);
+        SignUpPage signUpPage = new HomePage(driver).goToSignUp();
         User user = new User();
         signUpPage.doSignUp(ssn, user.getEmail(), user.getPassword());
 
@@ -42,9 +38,7 @@ public class SignUpTests {
 
     @Test
     public void checkWrongEmail() {
-        new HomePage(driver).getSignUpButton().click();
-
-        SignUpPage signUpPage = new SignUpPage(driver);
+        SignUpPage signUpPage = new HomePage(driver).goToSignUp();
         User user = new User();
         signUpPage.doSignUp(user.getSsn(), "test@test.test", user.getPassword());
 

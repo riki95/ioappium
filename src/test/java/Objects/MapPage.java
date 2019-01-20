@@ -71,27 +71,14 @@ public class MapPage {
         catch (Exception e) { }
     }
 
-    public void clicAddReportButton() {
-        getAddReportButton().click();
-    }
-
-    public void clicUndoReportButton() {
-        getAddReportButton().click();
-    }
-
-    public void clicConfirmReportButton() {
-        getConfirmReportButton().click();
-    }
-
     public void goToLocation(String location, String completeLocation) {
         getSearchBar().sendKeys(location);
         clickOnResult(completeLocation);
     }
 
     public String clickAndAddReport(String title, String descr) {
-        clicAddReportButton();
-        clicConfirmReportButton();
-
+        getAddReportButton().click();
+        getConfirmReportButton().click();
         return new AddReportPage(driver).addReport(title, descr);
     }
 

@@ -54,7 +54,7 @@ public class VoteTests {
 
     @Test
     public void checkVoteOtherReportWorks() throws InterruptedException {
-        loginReportAccountAndMakeReportThenLogout(); // Make the report before testing it
+        loginReportAccountAndMakeReportThenLogout(); // Make the report with another user before testing it
 
         goToTestLocation(username, password, location_reports, completeLocation_reports);
         new MapPage(driver).updateMakers();

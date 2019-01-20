@@ -28,7 +28,7 @@ public class ListScreenTests {
 
         ListPage listPage = new ListPage(driver);
         String firstElementTitle = listPage.getFirstElementText();
-        listPage.clicFirstElementInList();
+        listPage.openFirstElementInList();
 
         SingleReportPage singleReportPage = new SingleReportPage(driver);
         Assert.assertEquals(firstElementTitle, singleReportPage.getReportTitleText());

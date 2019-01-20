@@ -77,13 +77,9 @@ public class AccountPage {
 
         goToBottom();
         getLogoutButton().click();
-        clicConfirmLogout();
-    }
-
-    public void clicConfirmLogout() {
         getConfirmLogoutButton().click();
     }
-
+    
     public String getEmailText() {
         return getEmail().getText();
     }

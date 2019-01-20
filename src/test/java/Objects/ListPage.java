@@ -27,7 +27,7 @@ public class ListPage {
         return getFirstListElement().getText();
     }
 
-    public void clicFirstElementInList() {
+    public void openFirstElementInList() {
         getFirstListElement().click();
     }
 }

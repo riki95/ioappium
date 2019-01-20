@@ -63,7 +63,7 @@ public class AddReportPage {
         getButtonSend().click();
     }
 
-    public void clicConfirmReportButton() {
+    public void clickConfirmReportButton() {
         getConfirmReportButton().click();
 
     }
@@ -80,10 +80,10 @@ public class AddReportPage {
         driver.hideKeyboard();
 
         clicButtonSend();
-        clicConfirmReportButton();
+        clickConfirmReportButton();
 
         String successText = getSuccessText();
-        clicConfirmReportButton();
+        clickConfirmReportButton();
         return successText;
     }
 }
