@@ -86,4 +86,9 @@ public class MapPage {
         clickOnZoomButton();
         clickOnUpdateMakersButton();
     }
+
+    public void clickAddAndUndo() {
+        getAddReportButton().click();
+        getAddReportButton().click();
+    }
 }

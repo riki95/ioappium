@@ -24,8 +24,7 @@ public class AddReportScreenTests {
         homepage.doLogin(username, password);
 
         MapPage mapPage = new MapPage(driver);
-        mapPage.clicAddReportButton();
-        mapPage.clicUndoReportButton();
+        mapPage.clickAddAndUndo();
     }
 
     @Test
