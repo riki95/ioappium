@@ -27,6 +27,20 @@ public class ListPage {
         return getFirstListElement().getText();
     }
 
+    public WebElement getGoodNews() {
+        try {
+            new WebDriverWait(driver, 7)
+                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("good-news-text")));
+            return driver.findElementByAccessibilityId("good-news-text");
+
+        }
+        catch (Exception e) { return null; }
+    }
+
+    public String getGoodNewsText() {
+        return getGoodNews().getText();
+    }
+
     public void openFirstElementInList() {
         getFirstListElement().click();
     }

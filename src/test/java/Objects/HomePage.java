@@ -81,7 +81,7 @@ public class HomePage {
     }
 
     public void goToBottom() {
-        new TouchAction<>(driver).press(PointOption.point(538, 1700))
+        new TouchAction<>(driver).press(PointOption.point(538, 1400))
                 .waitAction().moveTo(PointOption.point(538, 100))
                 .release().perform();
     }

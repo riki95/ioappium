@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SearchReportsInLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AccountPageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AccountPageTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AddReportScreenTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AddReportScreenTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CapabilitiesSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CapabilitiesSetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HomeScreenTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomeScreenTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ListScreenTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ListScreenTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginScreenTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginScreenTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MapPageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MapPageTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/AccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/AddReportPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/AddReportPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/AppPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/AppPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/ListPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/ListPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/MapPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/MapPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/SignUpPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/SignUpPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/SingleReportPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/SingleReportPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Objects/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Objects/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignUpTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SignUpTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/VoteTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/VoteTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -13,13 +37,44 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1008746911">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="613" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="613" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AddReportScreenTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            <state relative-caret-position="351">
+              <caret line="33" column="86" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="33" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,12 +83,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SearchReportsInLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+            <state relative-caret-position="-102">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/ListPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,25 +157,32 @@
         <option value="$PROJECT_DIR$/src/test/java/Objects/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/AppPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ListScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/LogoutTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" />
         <option value="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/AccountPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/MapPageTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/VoteTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SignUpTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/DriverUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SearchReportsInLocation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -129,57 +205,66 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="zenaclean-mobile-systemtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zenaclean-mobile-systemtest" type="462c0819:PsiDirectoryNode" />
+              <item name="Mobile-Appium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mobile-Appium" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="zenaclean-mobile-systemtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zenaclean-mobile-systemtest" type="462c0819:PsiDirectoryNode" />
+              <item name="Mobile-Appium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mobile-Appium" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="zenaclean-mobile-systemtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zenaclean-mobile-systemtest" type="462c0819:PsiDirectoryNode" />
+              <item name="Mobile-Appium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mobile-Appium" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="zenaclean-mobile-systemtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zenaclean-mobile-systemtest" type="462c0819:PsiDirectoryNode" />
+              <item name="Mobile-Appium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mobile-Appium" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="zenaclean-mobile-systemtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zenaclean-mobile-systemtest" type="462c0819:PsiDirectoryNode" />
+              <item name="Mobile-Appium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mobile-Appium" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Objects" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Mobile-Appium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mobile-Appium" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mobile-Appium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547983852394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548085494242" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -198,30 +283,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in io-appium">
-    <configuration name="AccountPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SearchReportsInLocation.checkReportInNewLocation">
+    <configuration name="All in io-appium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountPageTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountPageTests.checkLogoutWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeScreenTests.checkDemoButtonWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountPageTests" />
-      <option name="METHOD_NAME" value="checkLogoutWorks" />
+      <option name="MAIN_CLASS_NAME" value="HomeScreenTests" />
+      <option name="METHOD_NAME" value="checkDemoButtonWorks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in io-appium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchReportsInLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="SearchReportsInLocation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchReportsInLocation.checkReportInNewLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="io-appium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchReportsInLocation" />
+      <option name="METHOD_NAME" value="checkReportInNewLocation" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,35 +332,24 @@
       <module name="io-appium" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VoteTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VoteTests.checkVoteMyReportNotWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="io-appium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VoteTests" />
-      <option name="METHOD_NAME" value="checkVoteMyReportNotWorks" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.VoteTests.checkVoteMyReportNotWorks" />
       <item itemvalue="JUnit.VoteTests" />
       <item itemvalue="JUnit.All in io-appium" />
-      <item itemvalue="JUnit.AccountPageTests.checkLogoutWorks" />
-      <item itemvalue="JUnit.AccountPageTests" />
+      <item itemvalue="JUnit.HomeScreenTests.checkDemoButtonWorks" />
+      <item itemvalue="JUnit.SearchReportsInLocation.checkReportInNewLocation" />
+      <item itemvalue="JUnit.SearchReportsInLocation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in io-appium" />
-        <item itemvalue="JUnit.AccountPageTests.checkLogoutWorks" />
-        <item itemvalue="JUnit.AccountPageTests" />
+        <item itemvalue="JUnit.SearchReportsInLocation.checkReportInNewLocation" />
+        <item itemvalue="JUnit.SearchReportsInLocation" />
         <item itemvalue="JUnit.VoteTests" />
-        <item itemvalue="JUnit.VoteTests.checkVoteMyReportNotWorks" />
+        <item itemvalue="JUnit.HomeScreenTests.checkDemoButtonWorks" />
+        <item itemvalue="JUnit.All in io-appium" />
       </list>
     </recent_temporary>
   </component>
@@ -290,49 +381,58 @@
       <workItem from="1547804723401" duration="7157000" />
       <workItem from="1547812094674" duration="3149000" />
       <workItem from="1547982674482" duration="1177000" />
+      <workItem from="1548082464944" duration="2882000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 03m 34s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation_checkReportInNewLocation - 2019.01.21 at 12h 37m 05s.xml">
+      <configuration name="SearchReportsInLocation.checkReportInNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 04m 15s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation_checkReportInNewLocation - 2019.01.21 at 16h 01m 26s.xml">
+      <configuration name="SearchReportsInLocation.checkReportInNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 06m 36s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation_checkReportInNewLocation - 2019.01.21 at 16h 02m 39s.xml">
+      <configuration name="SearchReportsInLocation.checkReportInNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 08m 26s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation_checkReportInNewLocation - 2019.01.21 at 16h 03m 44s.xml">
+      <configuration name="SearchReportsInLocation.checkReportInNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 09m 12s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation_checkReportInNewLocation - 2019.01.21 at 16h 04m 31s.xml">
+      <configuration name="SearchReportsInLocation.checkReportInNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 10m 25s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation - 2019.01.21 at 16h 06m 39s.xml">
+      <configuration name="SearchReportsInLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 11m 14s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation - 2019.01.21 at 16h 07m 19s.xml">
+      <configuration name="SearchReportsInLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 11m 56s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation_checkReportInNewLocation - 2019.01.21 at 16h 16m 08s.xml">
+      <configuration name="SearchReportsInLocation.checkReportInNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPageTests_checkLogoutWorks - 2019.01.18 at 13h 12m 35s.xml">
-      <configuration name="AccountPageTests.checkLogoutWorks" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation_checkReportInNewLocation - 2019.01.21 at 16h 32m 55s.xml">
+      <configuration name="SearchReportsInLocation.checkReportInNewLocation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_io-appium - 2019.01.18 at 13h 20m 34s.xml">
-      <configuration name="All in io-appium" configurationId="JUnit" />
+    <history-entry file="SearchReportsInLocation_checkReportInNewLocation - 2019.01.21 at 16h 44m 41s.xml">
+      <configuration name="SearchReportsInLocation.checkReportInNewLocation" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80186000" />
+    <option name="totallyTimeSpent" value="86262000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16595136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20314735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -342,8 +442,8 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32833788" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30722892" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994602" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3071253" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -351,7 +451,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32740742" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32923833" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32523617" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3243243" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3288889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -368,6 +468,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/testprova.java" />
@@ -397,85 +500,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="20" />
+        <state relative-caret-position="248">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1855#1856#0" expanded="true" />
             <element signature="e#1902#1903#0" expanded="true" />
             <element signature="e#1956#1957#0" expanded="true" />
             <element signature="e#2009#2010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AppPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/ListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="118" column="26" selection-start-line="118" selection-start-column="22" selection-end-line="118" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddReportScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -497,56 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HomeScreenTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AccountPageTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/VoteTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SingleReportPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -557,20 +539,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AccountPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddReportScreenTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="53" column="64" lean-forward="true" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+        <state relative-caret-position="597">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DriverUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        <state relative-caret-position="243">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AccountPageTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HomeScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AccountPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="69" column="65" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -579,8 +623,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+        <state relative-caret-position="504">
+          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AppPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="28" column="67" lean-forward="true" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1652#1653#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/VoteTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2292#2293#0" expanded="true" />
+            <element signature="e#2342#2343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ListScreenTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="33" column="86" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="33" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/ListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SearchReportsInLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -627,7 +743,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -644,7 +760,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -653,6 +768,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: cglib:cglib:3.2.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

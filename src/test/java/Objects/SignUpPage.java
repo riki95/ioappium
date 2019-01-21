@@ -96,7 +96,7 @@ public class SignUpPage {
     }
 
     public void goToBottom() {
-        new TouchAction<>(driver).press(PointOption.point(538, 1400))
+        new TouchAction<>(driver).press(PointOption.point(538, 1100))
                 .waitAction().moveTo(PointOption.point(538, 100))
                 .release().perform();
     }
