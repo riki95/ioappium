@@ -35,7 +35,7 @@ public class SearchReportsInLocation {
         ListPage listPage = new ListPage(driver);
         listPage.goToList();
 
-        Assert.assertEquals(goodNews, listPage.getGoodNewsText());
+        Assert.assertEquals(goodNews, listPage.getGoodNews());
     }
 
     @Test

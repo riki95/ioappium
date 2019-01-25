@@ -16,59 +16,27 @@ public class MapPage {
     }
 
     public WebElement getAddReportButton() {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("button-add")));
-            return driver.findElementByAccessibilityId("button-add");
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "button-add");
     }
 
     public WebElement getConfirmReportButton() {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("button-confirm")));
-            return driver.findElementByAccessibilityId("button-confirm");
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "button-confirm");
     }
 
     public WebElement getSearchBar() {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@class='android.widget.EditText']")));
-            return driver.findElement(By.xpath("//*[@class='android.widget.EditText']"));
-
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byXpath(driver, "//*[@class='android.widget.EditText']");
     }
 
     public void clickOnZoomButton() {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("zoom-button")));
-            driver.findElementByAccessibilityId("zoom-button").click();
-        }
-        catch (Exception e) { }
+        ElementFinder.byId(driver, "zoom-button").click();
     }
 
     public void clickOnUpdateMakersButton() {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("update-markers-button")));
-            driver.findElementByAccessibilityId("update-markers-button").click();
-        }
-        catch (Exception e) { }
+        ElementFinder.byId(driver, "update-markers-button").click();
     }
 
     public void clickOnResult(String completeLocation) {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='" + completeLocation + "']")));
-            driver.findElement(MobileBy.xpath("//*[@text='" + completeLocation + "']")).click();
-        }
-        catch (Exception e) { }
+        ElementFinder.byXpath(driver, "//*[@text='" + completeLocation + "']").click();
     }
 
     public void goToLocation(String location, String completeLocation) {

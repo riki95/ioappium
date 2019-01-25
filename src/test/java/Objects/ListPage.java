@@ -18,31 +18,15 @@ public class ListPage {
     }
 
     public WebElement getFirstListElement() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("title-report")));
-            return driver.findElementByAccessibilityId("title-report");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "title-report");
     }
 
     public String getFirstElementText() {
         return getFirstListElement().getText();
     }
 
-    public WebElement getGoodNews() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("good-news-text")));
-            return driver.findElementByAccessibilityId("good-news-text");
-
-        }
-        catch (Exception e) { return null; }
-    }
-
-    public String getGoodNewsText() {
-        return getGoodNews().getText();
+    public String getGoodNews() {
+        return ElementFinder.byId(driver, "good-news-text").getText();
     }
 
     public void openFirstElementInList() {
