@@ -1,12 +1,14 @@
+package Objects;
 import io.appium.java_client.MobileBy;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-//TODO Refactor every single getter with this functions
-public class DriverUtils {
-    public static WebElement elementById(AndroidDriver driver, String accessibilityId) {
+public class ElementFinder {
+    public static WebElement byId(AndroidDriver driver, String accessibilityId) {
         try {
             new WebDriverWait(driver, 7)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(accessibilityId)));
@@ -16,12 +18,18 @@ public class DriverUtils {
         catch (Exception e) { return null; }
     }
 
-    private WebElement elementByXpath(AndroidDriver driver, String xPath) {
+    public static WebElement byXpath(AndroidDriver driver, String xPath) {
         try {
             new WebDriverWait(driver, 5)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath(xPath)));
             return driver.findElementByXPath(xPath);
         }
         catch (Exception e) { return null; }
+    }
+
+    public static void goToBottom(AndroidDriver driver) {
+        new TouchAction<>(driver).press(PointOption.point(538, 1100))
+                .waitAction().moveTo(PointOption.point(538, 100))
+                .release().perform();
     }
 }

@@ -29,7 +29,7 @@ public class AccountPageTests {
         new AppPage(driver).goToAccountPage();
         AccountPage accountPage = new AccountPage(driver);
 
-        Assert.assertEquals(accountPage.getEmailText(), username);
+        Assert.assertEquals(accountPage.getEmail(), username);
     }
 
     @Test
