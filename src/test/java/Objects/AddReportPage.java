@@ -1,11 +1,7 @@
 package Objects;
 
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddReportPage {
     private AndroidDriver driver;
@@ -15,39 +11,15 @@ public class AddReportPage {
     }
 
     public WebElement getInputTitle() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("inputTitle")));
-            return driver.findElementByAccessibilityId("inputTitle");
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "inputTitle");
     }
 
     public WebElement getInputDescr() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("inputDescr")));
-            return driver.findElementByAccessibilityId("inputDescr");
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver,"inputDescr");
     }
 
     public WebElement getButtonSend() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("button-send")));
-            return driver.findElementByAccessibilityId("button-send");
-        }
-        catch (Exception e) { return null; }
-    }
-
-    public WebElement getConfirmReportButton() {
-        try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='OK']")));
-            return driver.findElementByXPath("//*[@text='OK']");
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "button-send");
     }
 
     public void sendInputTitle(String title) {
@@ -64,19 +36,18 @@ public class AddReportPage {
     }
 
     public void clickConfirmReportButton() {
-        getConfirmReportButton().click();
-
+        ElementFinder.getConfirmButton(driver).click();
     }
 
     public String getSuccessText() {
-        return driver.findElement(By.xpath("//*[@text='Segnalazione effettuata con successo!']")).getText();
+        return ElementFinder.byXpath(driver, "//*[@text='Segnalazione effettuata con successo!']").getText();
     }
 
-    public String addReport(String titolo, String descrizione) {
-        sendInputTitle(titolo);
+    public String addReport(String title, String description) {
+        sendInputTitle(title);
         driver.hideKeyboard();
 
-        sendInputDescr(descrizione);
+        sendInputDescr(description);
         driver.hideKeyboard();
 
         clicButtonSend();

@@ -15,10 +15,6 @@ public class AccountPage {
         return ElementFinder.byId(driver, "logout-button");
     }
 
-    private WebElement getConfirmLogoutButton() {
-        return ElementFinder.byXpath(driver, "//*[@text='OK']");
-    }
-
     public String getEmail() {
         return ElementFinder.byId(driver, "account-email").getText();
     }
@@ -28,6 +24,6 @@ public class AccountPage {
 
         ElementFinder.goToBottom(driver);
         getLogoutButton().click();
-        getConfirmLogoutButton().click();
+        ElementFinder.getConfirmButton(driver).click();
     }
 }

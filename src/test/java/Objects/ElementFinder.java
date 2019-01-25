@@ -27,6 +27,10 @@ public class ElementFinder {
         catch (Exception e) { return null; }
     }
 
+    public static WebElement getConfirmButton(AndroidDriver driver) {
+        return ElementFinder.byXpath(driver,"//*[@text='OK']");
+    }
+
     public static void goToBottom(AndroidDriver driver) {
         new TouchAction<>(driver).press(PointOption.point(538, 1100))
                 .waitAction().moveTo(PointOption.point(538, 100))
