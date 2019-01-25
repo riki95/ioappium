@@ -9,8 +9,8 @@ public class CapabilitiesSetter {
     public static AndroidDriver<MobileElement> DriverCreator () throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 
-        //setDeviceCapabilitiesEmulator(desiredCapabilities);
-        setDeviceCapabilities(desiredCapabilities);
+        setDeviceCapabilitiesEmulator(desiredCapabilities);
+        //setDeviceCapabilities(desiredCapabilities);
 
         desiredCapabilities.setCapability("appPackage", "com.zenaclean");
         desiredCapabilities.setCapability("appActivity", ".MainActivity");

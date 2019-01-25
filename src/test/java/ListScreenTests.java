@@ -1,4 +1,3 @@
-import Objects.AppPage;
 import Objects.HomePage;
 import Objects.ListPage;
 import Objects.SingleReportPage;
@@ -23,10 +22,8 @@ public class ListScreenTests {
         HomePage homePage = new HomePage(driver);
         homePage.goToDemo();
 
-        AppPage appPage = new AppPage(driver);
-        appPage.goToList();
-
         ListPage listPage = new ListPage(driver);
+        listPage.goToList();
         String firstElementTitle = listPage.getFirstElementText();
         listPage.openFirstElementInList();
 

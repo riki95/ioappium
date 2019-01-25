@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.net.MalformedURLException;
+import java.util.List;
 
 public class VoteTests {
 
@@ -33,13 +34,15 @@ public class VoteTests {
     private void loginReportAccountAndMakeReportThenLogout() throws InterruptedException {
         goToTestLocation(username_reports, password_reports, location_reports, completeLocation_reports);
         new MapPage(driver).clickAndAddReport("test", "test");
-        new AppPage(driver).goToAccountPage();
-        new AccountPage(driver).doLogout();
+        AccountPage accountPage = new AccountPage(driver);
+        accountPage.goToAccountPage();
+        accountPage.doLogout();
     }
 
     public void openNewReport() {
-        new AppPage(driver).goToList();
-        new ListPage(driver).getFirstListElement().click();
+        ListPage listPage = new ListPage(driver);
+        listPage.goToList();
+        listPage.getFirstListElement().click();
     }
 
     @Test

@@ -1,5 +1,4 @@
 import Objects.AccountPage;
-import Objects.AppPage;
 import Objects.HomePage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
@@ -26,8 +25,8 @@ public class AccountPageTests {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin(username, password);
 
-        new AppPage(driver).goToAccountPage();
         AccountPage accountPage = new AccountPage(driver);
+        accountPage.goToAccountPage();
 
         Assert.assertEquals(accountPage.getEmail(), username);
     }
@@ -37,8 +36,8 @@ public class AccountPageTests {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin(username, password);
 
-        new AppPage(driver).goToAccountPage();
         AccountPage accountPage = new AccountPage(driver);
+        accountPage.goToAccountPage();
         accountPage.doLogout();
 
         Assert.assertEquals(homepage.getSignUpButtonText(), "REGISTRATI");

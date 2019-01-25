@@ -11,6 +11,10 @@ public class AccountPage {
         this.driver = driver;
     }
 
+    public void goToAccountPage() {
+        ElementFinder.byXpath(driver, "//*[@text='Account']").click();
+    }
+
     private WebElement getLogoutButton() {
         return ElementFinder.byId(driver, "logout-button");
     }

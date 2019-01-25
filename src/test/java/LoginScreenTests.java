@@ -1,4 +1,3 @@
-import Objects.AppPage;
 import Objects.HomePage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
@@ -23,9 +22,6 @@ public class LoginScreenTests {
     public void checkLoginWorks() {
         HomePage homepage = new HomePage(driver);
         homepage.doLogin(username, password);
-
-        AppPage appPage = new AppPage(driver);
-        Assert.assertEquals(appPage.getListButtonText(), "Lista");
     }
 
     @After

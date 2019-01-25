@@ -16,53 +16,23 @@ public class HomePage {
     }
 
     public WebElement getDemoButton() {
-        try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("demo-button")));
-            return driver.findElementByAccessibilityId("demo-button");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "demo-button");
     }
 
     public WebElement getLoginEmailInput() {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("login-email")));
-            return driver.findElementByAccessibilityId("login-email");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "login-email");
     }
 
     public WebElement getLoginPasswordInput() {
-        try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("login-password")));
-            return driver.findElementByAccessibilityId("login-password");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "login-password");
     }
 
     public WebElement getLoginButton() {
-        try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("login-button")));
-            return driver.findElementByAccessibilityId("login-button");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "login-button");
     }
 
     public WebElement getSignUpButton() {
-        try {
-            new WebDriverWait(driver, 10)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("signup-button")));
-            return driver.findElementByAccessibilityId("signup-button");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "login-button");
     }
 
     public String getSignUpButtonText() {
@@ -71,19 +41,13 @@ public class HomePage {
 
     public void goToDemo() {
         getLoginEmailInput(); //Just used to wait the app to open
-        goToBottom();
+        ElementFinder.goToBottom(driver);
         getDemoButton().click();
     }
 
     public SignUpPage goToSignUp() {
         getSignUpButton().click();
         return new SignUpPage(driver);
-    }
-
-    public void goToBottom() {
-        new TouchAction<>(driver).press(PointOption.point(538, 1400))
-                .waitAction().moveTo(PointOption.point(538, 100))
-                .release().perform();
     }
 
 

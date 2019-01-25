@@ -1,4 +1,4 @@
-import Objects.AppPage;
+import Objects.ListPage;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Assert;
@@ -21,9 +21,6 @@ public class HomeScreenTests {
     public void checkDemoButtonWorks() {
         HomePage homepage = new HomePage(driver);
         homepage.goToDemo();
-
-        AppPage appPage = new AppPage(driver);
-        Assert.assertEquals(appPage.getListButtonText(), "Lista");
     }
 
     @After

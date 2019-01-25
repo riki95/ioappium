@@ -32,10 +32,8 @@ public class SearchReportsInLocation {
         mapPage.goToLocation(badLocation, completeBadLocation);
         mapPage.clickOnUpdateMakersButton();
 
-        AppPage appPage = new AppPage(driver);
-        appPage.goToList();
-
         ListPage listPage = new ListPage(driver);
+        listPage.goToList();
 
         Assert.assertEquals(goodNews, listPage.getGoodNewsText());
     }
@@ -49,10 +47,8 @@ public class SearchReportsInLocation {
         mapPage.goToLocation(goodLocation, completeGoodLocation);
         mapPage.clickOnUpdateMakersButton();
 
-        AppPage appPage = new AppPage(driver);
-        appPage.goToList();
-
         ListPage listPage = new ListPage(driver);
+        listPage.goToList();
         String firstElementTitle = listPage.getFirstElementText();
         listPage.openFirstElementInList();
 

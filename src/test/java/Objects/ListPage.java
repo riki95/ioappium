@@ -13,6 +13,10 @@ public class ListPage {
         this.driver = driver;
     }
 
+    public void goToList() {
+        ElementFinder.byXpath(driver, "//*[@text='Lista']").click();
+    }
+
     public WebElement getFirstListElement() {
         try {
             new WebDriverWait(driver, 7)
