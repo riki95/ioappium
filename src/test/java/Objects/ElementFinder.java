@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ElementFinder {
     public static WebElement byId(AndroidDriver driver, String accessibilityId) {
         try {
-            new WebDriverWait(driver, 7)
+            new WebDriverWait(driver, 10)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(accessibilityId)));
             return driver.findElementByAccessibilityId(accessibilityId);
 
@@ -20,7 +20,7 @@ public class ElementFinder {
 
     public static WebElement byXpath(AndroidDriver driver, String xPath) {
         try {
-            new WebDriverWait(driver, 5)
+            new WebDriverWait(driver, 10)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath(xPath)));
             return driver.findElementByXPath(xPath);
         }

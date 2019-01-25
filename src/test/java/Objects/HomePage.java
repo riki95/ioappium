@@ -32,7 +32,7 @@ public class HomePage {
     }
 
     public WebElement getSignUpButton() {
-        return ElementFinder.byId(driver, "login-button");
+        return ElementFinder.byId(driver, "signup-button");
     }
 
     public String getSignUpButtonText() {
@@ -41,6 +41,8 @@ public class HomePage {
 
     public void goToDemo() {
         getLoginEmailInput(); //Just used to wait the app to open
+        ElementFinder.goToBottom(driver);
+        ElementFinder.goToBottom(driver);
         ElementFinder.goToBottom(driver);
         getDemoButton().click();
     }

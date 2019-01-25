@@ -14,22 +14,7 @@ public class SingleReportPage {
     }
 
     public String getReportTitleText() {
-        try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("title-singlereport")));
-            return driver.findElementByAccessibilityId("title-singlereport").getText();
-
-        }
-        catch (Exception e) { return null; }
-    }
-
-    public WebElement getConfirmVoteButton() {
-        try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='OK']")));
-            return driver.findElementByXPath("//*[@text='OK']");
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "title-singlereport").getText();
     }
 
     public String votePositive() {
@@ -37,7 +22,7 @@ public class SingleReportPage {
             new WebDriverWait(driver, 5)
                     .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("vote-up")));
             driver.findElementByAccessibilityId("vote-up").click();
-            getConfirmVoteButton();
+            ElementFinder.getConfirmButton(driver);
             return "Vote ok";
         }
         catch (Exception e) { return "No Button"; }
