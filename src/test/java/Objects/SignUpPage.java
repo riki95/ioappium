@@ -1,12 +1,7 @@
 package Objects;
 
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SignUpPage {
     private AndroidDriver driver;
@@ -16,89 +11,35 @@ public class SignUpPage {
     }
 
     public WebElement getSsnInput() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("ssn-signup")));
-            return driver.findElementByAccessibilityId("ssn-signup");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "ssn-signup");
     }
 
     public WebElement getEmailInput() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("signup-email")));
-            return driver.findElementByAccessibilityId("signup-email");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "signup-email");
     }
 
     public WebElement getPasswordInput() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("signup-password")));
-            return driver.findElementByAccessibilityId("signup-password");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "signup-password");
     }
 
     public WebElement getConfirmButton() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("signup-confirmbutton")));
-            return driver.findElementByAccessibilityId("signup-confirmbutton");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "signup-confirmbutton");
     }
 
     public WebElement getSignUpButton() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("signup-button")));
-            return driver.findElementByAccessibilityId("signup-button");
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byId(driver, "signup-button");
     }
 
     public String getSuccessText() {
-        try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='Registrazione effettuata con successo!']")));
-            return driver.findElementByXPath("//*[@text='Registrazione effettuata con successo!']").getText();
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byXpath(driver, "//*[@text='Registrazione effettuata con successo!']").getText();
     }
 
     public String getAlreadyRegisteredText() {
-        try {
-            new WebDriverWait(driver, 5)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.xpath("//*[@text='Utente o codice fiscale già registrato']")));
-            return driver.findElementByXPath("//*[@text='Utente o codice fiscale già registrato']").getText();
-
-        }
-        catch (Exception e) { return null; }
+        return ElementFinder.byXpath(driver, "//*[@text='Utente o codice fiscale già registrato']").getText();
     }
 
     public WebElement getCheckbox() {
-        try {
-            new WebDriverWait(driver, 7)
-                    .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("gdpr-checkbox")));
-            return driver.findElementByAccessibilityId("gdpr-checkbox");
-
-        }
-        catch (Exception e) { return null; }
-    }
-
-    public void goToBottom() {
-        new TouchAction<>(driver).press(PointOption.point(538, 1100))
-                .waitAction().moveTo(PointOption.point(538, 100))
-                .release().perform();
+        return ElementFinder.byId(driver, "gdpr-checkbox");
     }
 
     public void doSignUp(String ssn, String email, String password) {
@@ -114,7 +55,7 @@ public class SignUpPage {
         getConfirmButton().sendKeys(password);
         driver.hideKeyboard();
 
-        goToBottom();
+        ElementFinder.goToBottom(driver);
 
         getCheckbox().click();
 

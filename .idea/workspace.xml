@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608750f5-f6f2-4557-89cc-a2ef6eace772" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CapabilitiesSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeScreenTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListScreenTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginScreenTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/AccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/AppPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchReportsInLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchReportsInLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VoteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VoteTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Objects/MapPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="764">
@@ -59,6 +47,30 @@
                 <element signature="e#883#884#0" expanded="true" />
                 <element signature="e#937#938#0" expanded="true" />
                 <element signature="e#1012#1013#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/test/java/SignUpTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/DriverUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddReportScreenTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/DriverUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/Finder.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/ElementFinder.java" />
@@ -134,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/test/java/Objects/ListPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SearchReportsInLocation.java" />
         <option value="$PROJECT_DIR$/src/test/java/Objects/MapPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java" />
       </list>
     </option>
   </component>
@@ -200,7 +212,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548445801959" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548446259895" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -323,7 +335,7 @@
       <workItem from="1547982674482" duration="1177000" />
       <workItem from="1548082464944" duration="2882000" />
       <workItem from="1548443333021" duration="56000" />
-      <workItem from="1548443422366" duration="2614000" />
+      <workItem from="1548443422366" duration="2825000" />
     </task>
     <servers />
   </component>
@@ -360,7 +372,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88932000" />
+    <option name="totallyTimeSpent" value="89143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,16 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Objects/AddReportPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-354">
@@ -664,6 +666,28 @@
             <element signature="e#883#884#0" expanded="true" />
             <element signature="e#937#938#0" expanded="true" />
             <element signature="e#1012#1013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Objects/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
           </folding>
         </state>
       </provider>
