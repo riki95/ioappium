@@ -43,6 +43,17 @@ public class AccountPageTests {
         Assert.assertEquals(homepage.getSignUpButtonText(), "REGISTRATI");
     }
 
+    @Test
+    public void checkCorrectBalance() {
+        HomePage homepage = new HomePage(driver);
+        homepage.doLogin(username, password);
+
+        AccountPage accountPage = new AccountPage(driver);
+        accountPage.goToAccountPage();
+
+        Assert.assertEquals(accountPage.getAccountBalance(), "Saldo: 100 TOKEN");
+    }
+
     @After
     public void tearDown() {
         driver.quit();

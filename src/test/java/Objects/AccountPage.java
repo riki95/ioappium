@@ -23,6 +23,11 @@ public class AccountPage {
         return ElementFinder.byId(driver, "account-email").getText();
     }
 
+    public String getAccountBalance() {
+        return ElementFinder.byId(driver, "account-balance").getText();
+    }
+
+
     public void doLogout() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
 
