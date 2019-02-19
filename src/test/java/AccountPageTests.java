@@ -12,8 +12,8 @@ public class AccountPageTests {
 
     private AndroidDriver driver;
 
-    String username = "test@test.test";
-    String password = "testtest";
+    String username = "report-votes-5@test.test";
+    String password = "password";
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -51,7 +51,7 @@ public class AccountPageTests {
         AccountPage accountPage = new AccountPage(driver);
         accountPage.goToAccountPage();
 
-        Assert.assertEquals(accountPage.getAccountBalance(), "Saldo: 100 TOKEN");
+        Assert.assertEquals("Saldo: 0 token", accountPage.getAccountBalance() );
     }
 
     @After

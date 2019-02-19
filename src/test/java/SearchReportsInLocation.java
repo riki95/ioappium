@@ -45,7 +45,7 @@ public class SearchReportsInLocation {
 
         MapPage mapPage =  new MapPage(driver);
         mapPage.goToLocation(goodLocation, completeGoodLocation);
-        mapPage.clickOnUpdateMakersButton();
+        //mapPage.clickOnUpdateMakersButton();
 
         ListPage listPage = new ListPage(driver);
         listPage.goToList();

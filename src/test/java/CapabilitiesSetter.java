@@ -8,9 +8,8 @@ import java.net.URL;
 public class CapabilitiesSetter {
     public static AndroidDriver<MobileElement> DriverCreator () throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-
-        setDeviceCapabilitiesEmulator(desiredCapabilities);
-        //setDeviceCapabilities(desiredCapabilities);
+        //setDeviceCapabilitiesEmulator(desiredCapabilities);
+        setDeviceCapabilities(desiredCapabilities);
 
         desiredCapabilities.setCapability("appPackage", "com.zenaclean");
         desiredCapabilities.setCapability("appActivity", ".MainActivity");
@@ -35,4 +34,5 @@ public class CapabilitiesSetter {
         desiredCapabilities.setCapability("platformVersion", "8.0");
         desiredCapabilities.setCapability("deviceName", "Pixel_2_API_26");
     }
+
 }

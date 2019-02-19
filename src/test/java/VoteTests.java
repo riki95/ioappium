@@ -13,12 +13,12 @@ public class VoteTests {
     String username = "test@test.test";
     String password = "testtest";
     String location = "Cabella Ligure";
-    String completeLocation = "Cabella Ligure, Province of Alessandria, Italy";
+    String completeLocation = "Cabella Ligure, AL, Italia";
 
     String username_reports = "report-votes@test.test";
     String password_reports = "password";
     String location_reports = "Ronco Scrivia";
-    String completeLocation_reports = "Ronco Scrivia, Metropolitan City of Genoa, Italy";
+    String completeLocation_reports = "Ronco Scrivia, GE, Italia";
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -59,7 +59,6 @@ public class VoteTests {
         loginReportAccountAndMakeReportThenLogout(); // Make the report with another user before testing it
 
         goToTestLocation(username, password, location_reports, completeLocation_reports);
-        new MapPage(driver).updateMakers();
 
         openNewReport();
         String result = new SingleReportPage(driver).votePositive();
